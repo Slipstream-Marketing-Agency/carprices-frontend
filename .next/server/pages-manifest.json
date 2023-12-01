@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/compare-cars": "pages/compare-cars.js",
+  "/search-cars": "pages/search-cars.js",
+  "/web-stories": "pages/web-stories.js",
+  "/car-deatils": "pages/car-deatils.js"
+}
