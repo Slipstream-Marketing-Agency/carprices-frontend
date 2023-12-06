@@ -4,6 +4,7 @@ import MainLayout from '@/src/layout/MainLayout';
 import Testimonial from '@/src/components/Home5/Testimonial/Testimonial';
 import CarLeftSidebar from '@/src/utils/CarLeftSidebar';
 import SelectComponent from '@/src/utils/SelectComponent';
+import Ad728x90 from '@/src/components/ads/Ad728x90';
 function CarListingLeftSidebar() {
     const [activeClass, setActiveClass] = useState('grid-group-wrapper'); // Initial class is "grid-group-wrapper"
 
@@ -13,6 +14,8 @@ function CarListingLeftSidebar() {
     const conditions = ["Used Car","New Car"]
   return (
     <MainLayout>
+      <Ad728x90 dataAdSlot="5962627056" />
+        
         <div className="product-page pt-100 mb-100">
             <div className="container">
             <div className="row g-xl-4 gy-5">
@@ -781,6 +784,7 @@ function CarListingLeftSidebar() {
             </div>
             </div>
         </div>
+      <Ad728x90 dataAdSlot="5962627056" />
         
         <div className="toprated-used-cars mb-100">
             <div className="container">

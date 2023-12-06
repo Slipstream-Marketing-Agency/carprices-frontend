@@ -281,19 +281,15 @@ function index() {
       <div className="row ">
         <div className="col-lg-12 divider">
           <div className="slider-btn-group style-2 justify-content-md-between justify-content-center">
-            <div className="slider-btn prev-3 d-md-flex d-none">
-              <svg width={11} height={19} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z" />
-              </svg>
+            <div className="slider-btn prev-3 d-md-flex d-none pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
             </div>
             <div className="view-btn-area">
               <p>There are Trending Car Available</p>
               <a className="view-btn" href="#">View More</a>
             </div>
-            <div className="slider-btn next-3 d-md-flex d-none">
-              <svg width={11} height={19} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 6.50008L0 0L5.09091 6.50008L0 13L8 6.50008Z" />
-              </svg>
+            <div className="slider-btn next-3 d-md-flex d-none pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>             
             </div>
           </div>
         </div>

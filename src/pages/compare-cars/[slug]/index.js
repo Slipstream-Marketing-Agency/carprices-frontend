@@ -6,6 +6,9 @@ import Link from "next/link";
 import Marquee from 'react-fast-marquee';
 import MainLayout from '@/src/layout/MainLayout';
 import SelectComponent from '@/src/utils/SelectComponent';
+import Ad300x250 from '@/src/components/ads/Ad300x250';
+import Ad728x90 from '@/src/components/ads/Ad728x90';
+import Image from 'next/image';
 SwiperCore.use([Pagination, Autoplay, EffectFade, Navigation]);
 function CarDeatilsPage() {
   const [isSticky, setIsSticky] = useState(false);
@@ -216,6 +219,8 @@ function CarDeatilsPage() {
 
   return (
     <MainLayout>
+      <Ad728x90 dataAdSlot="5962627056" />
+      
       <div className="car-details-area pt-100 mb-100">
         <div className="container">
           <div className="row mb-50">
@@ -264,7 +269,7 @@ function CarDeatilsPage() {
                         <div className="tab-pane fade show active" id="exterior" role="tabpanel" aria-labelledby="exterior-tab">
                           <div className="product-img">
                             <div className="number-of-img">
-                              <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                              <Image src="assets/img/home1/icon/gallery-icon-1.svg" layout="fill" objectFit='contain' alt="" />
                               10
                             </div>
                             <a href="#" className="fav">
@@ -274,27 +279,29 @@ function CarDeatilsPage() {
                               </svg>
                             </a>
                             <div className="slider-btn-group">
-                              <div className="product-stand-next swiper-arrow">
-                                <svg width={8} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
+                              <div className="product-stand-next swiper-arrow pb-1">
+                                {/* <svg width={8} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z" />
-                                </svg>
+                                </svg> */}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"/></svg>
                               </div>
-                              <div className="product-stand-prev swiper-arrow">
-                                <svg width={8} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
+                              <div className="product-stand-prev swiper-arrow pb-1">
+                                {/* <svg width={8} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M8 6.50008L0 0L5.09091 6.50008L0 13L8 6.50008Z" />
-                                </svg>
+                                </svg> */}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
                               </div>
                             </div>
                             <Swiper {...slideSetting} className="swiper product-img-slider">
                               <div className="swiper-wrapper">
                                 <SwiperSlide className="swiper-slide">
-                                  <img src="assets/img/inner-page/product-img-02.png" alt="image" />
+                                  <Image src="/assets/img/inner-page/product-img-02.png"  width={1000} height={70} alt="product image" />
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                  <img src="assets/img/inner-page/product-img-03.png" alt="image" />
+                                  <img src="/assets/img/inner-page/product-img-03.png" width={1000} height={70} alt="product image" />
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                  <img src="assets/img/inner-page/product-img-04.png" alt="image" />
+                                  <Image src="/assets/img/inner-page/product-img-04.png" width={1000} height={70} alt="product image" />
                                 </SwiperSlide>
                               </div>
                             </Swiper>
@@ -303,7 +310,7 @@ function CarDeatilsPage() {
                         <div className="tab-pane fade" id="interior" role="tabpanel" aria-labelledby="interior-tab">
                           <div className="product-img">
                             <div className="number-of-img">
-                              <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                              <Image src="/assets/img/home1/icon/gallery-icon-1.svg" width={25} height={25} alt="icon" />
                               10
                             </div>
                             <a href="#" className="fav">
@@ -314,26 +321,24 @@ function CarDeatilsPage() {
                             </a>
                             <div className="slider-btn-group">
                               <div className="product-stand-next swiper-arrow">
-                                <svg width={8} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z" />
-                                </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"/></svg>
+
                               </div>
                               <div className="product-stand-prev swiper-arrow">
-                                <svg width={8} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M8 6.50008L0 0L5.09091 6.50008L0 13L8 6.50008Z" />
-                                </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>
+
                               </div>
                             </div>
                             <Swiper {...slideSetting} className="swiper product-img-slider">
                               <div className="swiper-wrapper">
-                                <SwiperSlide className="swiper-slide">
-                                  <img src="assets/img/inner-page/interior-01.png" alt="image" />
+                                <SwiperSlide className="swiper-slide ">
+                                  <Image src="/assets/img/inner-page/interior-01.png" fill objectFit='contain' alt="interior icon" />
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                  <img src="assets/img/inner-page/interior-02.png" alt="image" />
+                                  <Image src="/assets/img/inner-page/interior-02.png" fill objectFit='contain' alt="interior icon" />
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                  <img src="assets/img/inner-page/interior-03.png" alt="image" />
+                                  <Image src="/assets/img/inner-page/interior-03.png" fill objectFit='contain' alt="interior icon" />
                                 </SwiperSlide>
                               </div>
                             </Swiper>
@@ -365,7 +370,7 @@ function CarDeatilsPage() {
                                 <SwiperSlide className="swiper-slide">
                                   <div className="car-color-wrap">
                                     <div className="car-img">
-                                      <img src="assets/img/inner-page/color-car-05.png" alt="" />
+                                      <img src="/assets/img/inner-page/color-car-05.png" alt="" />
                                     </div>
                                     <div className="content">
                                       <h5>Lamborghini Murciélago (Black)</h5>
@@ -375,7 +380,7 @@ function CarDeatilsPage() {
                                 <SwiperSlide className="swiper-slide">
                                   <div className="car-color-wrap">
                                     <div className="car-img">
-                                      <img src="assets/img/inner-page/color-car-06.png" alt="" />
+                                      <img src="/assets/img/inner-page/color-car-06.png" alt="" />
                                     </div>
                                     <div className="content">
                                       <h5>Lamborghini Murciélago (Blue)</h5>
@@ -385,7 +390,7 @@ function CarDeatilsPage() {
                                 <SwiperSlide className="swiper-slide">
                                   <div className="car-color-wrap">
                                     <div className="car-img">
-                                      <img src="assets/img/inner-page/color-car-07.png" alt="" />
+                                      <img src="/assets/img/inner-page/color-car-07.png" alt="" />
                                     </div>
                                     <div className="content">
                                       <h5>Lamborghini Murciélago (Pink)</h5>
@@ -395,7 +400,7 @@ function CarDeatilsPage() {
                                 <div className="swiper-slide">
                                   <div className="car-color-wrap">
                                     <div className="car-img">
-                                      <img src="assets/img/inner-page/color-car-08.png" alt="" />
+                                      <img src="/assets/img/inner-page/color-car-08.png" alt="" />
                                     </div>
                                     <div className="content">
                                       <h5>Lamborghini Murciélago (Orange)</h5>
@@ -504,7 +509,7 @@ function CarDeatilsPage() {
                     <ul>
                       <li>
                         <div className="icon">
-                          <img src="assets/img/inner-page/icon/mileage.svg" alt="" />
+                          <img src="/assets/img/inner-page/icon/mileage.svg" alt="" />
                         </div>
                         <div className="content">
                           <h6>25,100 miles</h6>
@@ -513,7 +518,7 @@ function CarDeatilsPage() {
                       </li>
                       <li>
                         <div className="icon">
-                          <img src="assets/img/inner-page/icon/engine.svg" alt="" />
+                          <img src="/assets/img/inner-page/icon/engine.svg" alt="" />
                         </div>
                         <div className="content">
                           <h6>22,231 cc</h6>
@@ -522,7 +527,7 @@ function CarDeatilsPage() {
                       </li>
                       <li>
                         <div className="icon">
-                          <img src="assets/img/inner-page/icon/fuel.svg" alt="" />
+                          <img src="/assets/img/inner-page/icon/fuel.svg" alt="" />
                         </div>
                         <div className="content">
                           <h6>Petrol + Gas</h6>
@@ -531,7 +536,7 @@ function CarDeatilsPage() {
                       </li>
                       <li>
                         <div className="icon">
-                          <img src="assets/img/inner-page/icon/condition.svg" alt="" />
+                          <img src="/assets/img/inner-page/icon/condition.svg" alt="" />
                         </div>
                         <div className="content">
                           <h6>Used Car</h6>
@@ -694,7 +699,7 @@ function CarDeatilsPage() {
                         <SwiperSlide className="swiper-slide">
                           <div className="car-color-wrap">
                             <div className="car-img">
-                              <img src="assets/img/inner-page/color-car-01.png" alt="" />
+                              <Image src="/assets/img/inner-page/color-car-01.png" alt="car image" width={400} height={70}/>
                             </div>
                             <div className="content">
                               <h6>Lamborghini Murciélago (Black)</h6>
@@ -704,7 +709,7 @@ function CarDeatilsPage() {
                         <SwiperSlide className="swiper-slide">
                           <div className="car-color-wrap">
                             <div className="car-img">
-                              <img src="assets/img/inner-page/color-car-02.png" alt="" />
+                              <Image src="/assets/img/inner-page/color-car-02.png" alt="car image" width={400} height={70}/>
                             </div>
                             <div className="content">
                               <h6>Lamborghini Murciélago (Blue)</h6>
@@ -714,7 +719,7 @@ function CarDeatilsPage() {
                         <SwiperSlide className="swiper-slide">
                           <div className="car-color-wrap">
                             <div className="car-img">
-                              <img src="assets/img/inner-page/color-car-03.png" alt="" />
+                              <Image src="/assets/img/inner-page/color-car-03.png" alt="car image" width={400} height={70} />
                             </div>
                             <div className="content">
                               <h6>Lamborghini Murciélago (Pink)</h6>
@@ -724,7 +729,7 @@ function CarDeatilsPage() {
                         <SwiperSlide className="swiper-slide">
                           <div className="car-color-wrap">
                             <div className="car-img">
-                              <img src="assets/img/inner-page/color-car-04.png" alt="" />
+                              <Image src="/assets/img/inner-page/color-car-04.png" alt="car image" width={400} height={70} />
                             </div>
                             <div className="content">
                               <h6>Lamborghini Murciélago (Orange)</h6>
@@ -842,7 +847,7 @@ function CarDeatilsPage() {
                       <li>
                         <div className="single-comment-area">
                           <div className="author-img">
-                            <img src="assets/img/inner-page/comment-author-01.png" alt="" />
+                            <Image src="/assets/img/inner-page/comment-author-01.png" width={50} height={50} alt="author" />
                           </div>
                           <div className="comment-content">
                             <div className="author-name-deg">
@@ -862,7 +867,7 @@ function CarDeatilsPage() {
                           <li>
                             <div className="single-comment-area">
                               <div className="author-img">
-                                <img src="assets/img/inner-page/comment-author-02.png" alt="" />
+                                <Image src="/assets/img/inner-page/comment-author-02.png" width={50} height={50} alt="author"/>
                               </div>
                               <div className="comment-content">
                                 <div className="author-name-deg">
@@ -882,7 +887,7 @@ function CarDeatilsPage() {
                           <li>
                             <div className="single-comment-area">
                               <div className="author-img">
-                                <img src="assets/img/inner-page/comment-author-03.png" alt="" />
+                                <Image src="/assets/img/inner-page/comment-author-03.png" width={50} height={50} alt="author" />
                               </div>
                               <div className="comment-content">
                                 <div className="author-name-deg">
@@ -904,7 +909,7 @@ function CarDeatilsPage() {
                       <li>
                         <div className="single-comment-area">
                           <div className="author-img">
-                            <img src="assets/img/inner-page/comment-author-04.png" alt="" />
+                            <Image src="/assets/img/inner-page/comment-author-04.png" width={50} height={50} alt="author" />
                           </div>
                           <div className="comment-content">
                             <div className="author-name-deg">
@@ -924,7 +929,7 @@ function CarDeatilsPage() {
                       <li>
                         <div className="single-comment-area">
                           <div className="author-img">
-                            <img src="assets/img/inner-page/comment-author-05.png" alt="" />
+                            <Image src="/assets/img/inner-page/comment-author-05.png" width={50} height={50} alt="author" />
                           </div>
                           <div className="comment-content">
                             <div className="author-name-deg">
@@ -951,7 +956,7 @@ function CarDeatilsPage() {
             </div>
             <div className="col-lg-4">
               <div className="car-details-sidebar">
-                <div className="contact-info mb-50">
+                {/* <div className="contact-info mb-50">
                 <div className="single-contact" id="phoneNumber">
                   <a onClick={() => handleClick('phoneNumber')}>
                     <i className="bx bx-phone-call" /> Show Number
@@ -967,6 +972,9 @@ function CarDeatilsPage() {
                     <i className="bx bxl-whatsapp" /> Whatsapp
                   </a>
                 </div>
+                </div > */}
+               <div className="contact-info mb-50" style={{ backgroundColor: 'rosybrown' }}>
+                  <Ad300x250 dataAdSlot="5772723668" />
                 </div>
                 <div className="inquiry-form mb-40">
                   <div className="title">
@@ -1028,22 +1036,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-01.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-01.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Mercedes-Benz-2023</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1061,22 +1069,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-02.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-02.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Hyundai Sonata-2022</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1094,22 +1102,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-03.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-03.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Lexus RX-2023</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1127,22 +1135,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-04.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-04.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Ferrari 458 Italia</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1175,22 +1183,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-01.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-01.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Mercedes-Benz-2023</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1208,22 +1216,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-02.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-02.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Hyundai Sonata-2022</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1241,22 +1249,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-03.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-03.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Lexus RX-2023</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1274,22 +1282,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-04.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-04.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Ferrari 458 Italia</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1322,22 +1330,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-01.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-01.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Mercedes-Benz-2023</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1355,22 +1363,22 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-02.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-02.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Hyundai Sonata-2022</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1388,18 +1396,18 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-03.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-03.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Lexus RX-2023</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/fuel.svg" alt="" />
+                              <img src="/assets/img/home4/icon/fuel.svg" alt="" />
                               Petrol
                             </li>
                             <li>
@@ -1421,14 +1429,14 @@ function CarDeatilsPage() {
                             </svg>
                           </a>
                           <div className="car-img">
-                            <img className="img-fluid" src="assets/img/inner-page/sb-img-04.png" alt="image" />
+                            <img className="img-fluid" src="/assets/img/inner-page/sb-img-04.png" alt="image" />
                           </div> 
                         </div>
                         <div className="product-content">
                           <h6><Link legacyBehavior href="/car-deatils"><a>Ferrari 458 Italia</a></Link></h6>
                           <ul className="features">
                             <li>
-                              <img src="assets/img/home4/icon/menual.svg" alt="" />
+                              <img src="/assets/img/home4/icon/menual.svg" alt="" />
                               Automatic
                             </li>
                             <li>
@@ -1436,7 +1444,7 @@ function CarDeatilsPage() {
                               Petrol
                             </li>
                             <li>
-                              <img src="assets/img/home4/icon/electric.svg" alt="" />
+                              <img src="/assets/img/home4/icon/electric.svg" alt="" />
                               Electric
                             </li>
                           </ul>
@@ -1480,8 +1488,8 @@ function CarDeatilsPage() {
                   <SwiperSlide className="swiper-slide">
                     <div className="product-card">
                       <div className="product-img">
-                        <div className="number-of-img">
-                          <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                        <div className="number-of-img p-1">
+                          <Image src="assets/img/home1/icon/gallery-icon-1.svg" fill objectFit='contain' alt="gallery icon" />
                           10
                         </div>
                         <a href="#" className="fav">
@@ -1505,13 +1513,13 @@ function CarDeatilsPage() {
                         <div className="swiper product-img-slider">
                           <div className="swiper-wrapper">
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-11.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-11.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-11.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-11.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-11.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-11.png"width={400} height={70} alt="product image" />
                             </div>
                           </div>
                         </div>
@@ -1586,8 +1594,8 @@ function CarDeatilsPage() {
                   <SwiperSlide className="swiper-slide">
                     <div className="product-card">
                       <div className="product-img">
-                        <div className="number-of-img">
-                          <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                        <div className="number-of-img ">
+                          <Image src="/assets/img/home1/icon/gallery-icon-1.svg" fill objectFit='contain' alt="gallery icon" />
                           10
                         </div>
                         <a href="#" className="fav">
@@ -1611,13 +1619,13 @@ function CarDeatilsPage() {
                         <div className="swiper product-img-slider">
                           <div className="swiper-wrapper">
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-12.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-12.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-12.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                           </div>
                         </div>
@@ -1693,7 +1701,7 @@ function CarDeatilsPage() {
                     <div className="product-card">
                       <div className="product-img">
                         <div className="number-of-img">
-                          <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                          <Image src="/assets/img/home1/icon/gallery-icon-1.svg" fill objectFit='contain' alt="gallery icon" />
                           10
                         </div>
                         <a href="#" className="fav">
@@ -1717,16 +1725,16 @@ function CarDeatilsPage() {
                         <div className="swiper product-img-slider">
                           <div className="swiper-wrapper">
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-13.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-13.png"  width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-13.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-13.png"  width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-13.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-13.png"  width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-13.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-13.png"   width={400} height={70} alt="product image" />
                             </div>
                           </div>
                         </div>
@@ -1802,7 +1810,7 @@ function CarDeatilsPage() {
                     <div className="product-card">
                       <div className="product-img">
                         <div className="number-of-img">
-                          <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                        <Image src="/assets/img/home1/icon/gallery-icon-1.svg" fill objectFit='contain' alt="gallery icon" />
                           10
                         </div>
                         <a href="#" className="fav">
@@ -1826,16 +1834,16 @@ function CarDeatilsPage() {
                         <div className="swiper product-img-slider">
                           <div className="swiper-wrapper">
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-11.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-11.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-11.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-11.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-11.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-11.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-11.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-11.png" width={400} height={70} alt="product image" />
                             </div>
                           </div>
                         </div>
@@ -1911,7 +1919,7 @@ function CarDeatilsPage() {
                     <div className="product-card">
                       <div className="product-img">
                         <div className="number-of-img">
-                          <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                        <Image src="/assets/img/home1/icon/gallery-icon-1.svg" fill objectFit='contain' alt="gallery icon" />
                           10
                         </div>
                         <a href="#" className="fav">
@@ -1935,13 +1943,13 @@ function CarDeatilsPage() {
                         <div className="swiper product-img-slider">
                           <div className="swiper-wrapper">
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-12.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-12.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-12.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                           </div>
                         </div>
@@ -2017,7 +2025,7 @@ function CarDeatilsPage() {
                     <div className="product-card">
                       <div className="product-img">
                         <div className="number-of-img">
-                          <img src="assets/img/home1/icon/gallery-icon-1.svg" alt="" />
+                        <Image src="/assets/img/home1/icon/gallery-icon-1.svg" fill objectFit='contain' alt="gallery icon" />
                           10
                         </div>
                         <a href="#" className="fav">
@@ -2039,15 +2047,15 @@ function CarDeatilsPage() {
                           </div>
                         </div>
                         <div className="swiper product-img-slider">
-                          <div className="swiper-wrapper">
+                        <div className="swiper-wrapper">
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-13.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-13.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                             <div className="swiper-slide">
-                              <img src="assets/img/home1/product-img-13.png" alt="image" />
+                              <Image src="/assets/img/home1/product-img-12.png" width={400} height={70} alt="product image" />
                             </div>
                           </div>
                         </div>
@@ -2127,9 +2135,8 @@ function CarDeatilsPage() {
             <div className="col-lg-12 divider">
               <div className="slider-btn-group style-2 justify-content-md-between justify-content-center">
                 <div className="slider-btn prev-2 d-md-flex d-none">
-                  <svg width={11} height={19} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
+
                 </div>
                 <div className="view-btn-area">
                   <p>There will be 100+ Similar Car</p>
@@ -2160,9 +2167,9 @@ function CarDeatilsPage() {
               <div className="customer-feedback-left">
                 <a href="#" className="trustpilot">
                   <h5>Excellent!</h5>
-                  <img className="star" src="assets/img/home1/icon/trustpilot-star3.svg" alt="" />
+                  <Image className="star" src="/assets/img/home1/icon/trustpilot-star3.svg" width={50} height={50} alt="star icon" />
                   <span>Based On <strong>2348</strong> Reviews</span>
-                  <img className="logo" src="assets/img/home1/icon/trustpilot-log3.svg" alt="" />
+                  <Image className="logo" src="/assets/img/home1/icon/trustpilot-log3.svg" width={50} height={50}  alt="icon" />
                 </a>
                 <a href="#" className="google">
                   <img className="logo" src="assets/img/home1/icon/google3.svg" alt="" />
@@ -2199,7 +2206,7 @@ function CarDeatilsPage() {
                             <span>Great Services!</span>
                           </div>
                           <div className="logo">
-                            <img src="assets/img/home1/icon/google3.svg" alt="" />
+                            <Image src="/assets/img/home1/icon/google3.svg" width={50} height={50} alt="google icon" />
                           </div>
                         </div>
                         <p>Drivco-Agency to the actively encourage customers to leave
@@ -2213,11 +2220,11 @@ function CarDeatilsPage() {
                       <div className="feedback-card">
                         <div className="feedback-top">
                           <div className="stat-area">
-                            <img src="assets/img/home1/icon/trustpilot-star.svg" alt="" />
+                            <Image src="/assets/img/home1/icon/trustpilot-star.svg" width={50} height={50} alt="star icon" />
                             <span>Trusted Company</span>
                           </div>
                           <div className="logo">
-                            <img src="assets/img/home1/icon/trustpilot-log3.svg" alt="" />
+                            <Image src="/assets/img/home1/icon/trustpilot-log3.svg" width={50} height={50} alt="icon" />
                           </div>
                         </div>
                         <p>Drivco-Agency customer feedback is an invaluable source of
@@ -2244,7 +2251,7 @@ function CarDeatilsPage() {
                             <span>Great Services!</span>
                           </div>
                           <div className="logo">
-                            <img src="assets/img/home1/icon/google3.svg" alt="" />
+                            <img src="/assets/img/home1/icon/google3.svg" alt="" />
                           </div>
                         </div>
                         <p>Drivco-Agency to the actively encourage customers to leave
@@ -2258,11 +2265,11 @@ function CarDeatilsPage() {
                       <div className="feedback-card">
                         <div className="feedback-top">
                           <div className="stat-area">
-                            <img src="assets/img/home1/icon/trustpilot-star.svg" alt="" />
+                            <Image src="/assets/img/home1/icon/trustpilot-star.svg" width={50} height={50} alt="star icon" />
                             <span>Trusted Company</span>
                           </div>
                           <div className="logo">
-                            <img src="assets/img/home1/icon/trustpilot-log3.svg" alt="" />
+                            <Image src="/assets/img/home1/icon/trustpilot-log3.svg" width={50} height={50} alt="icon" />
                           </div>
                         </div>
                         <p>Drivco-Agency customer feedback is an invaluable source of
@@ -2278,19 +2285,17 @@ function CarDeatilsPage() {
                 <div className="row ">
                   <div className="col-lg-12 divider">
                     <div className="slider-btn-group style-2 justify-content-md-between justify-content-center">
-                      <div className="slider-btn prev-4 d-md-flex d-none">
-                        <svg width={11} height={19} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z" />
-                        </svg>
+                      <div className="slider-btn prev-4 d-md-flex d-none pb-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
+
                       </div>
                       <div className="view-btn-area">
                         <p>Thousand of People Reviews to Us</p>
                         <Link legacyBehavior  href="/customer-review"><a className="view-btn">View All Review</a></Link>
                       </div>
-                      <div className="slider-btn next-4 d-md-flex d-none">
-                        <svg width={11} height={19} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8 6.50008L0 0L5.09091 6.50008L0 13L8 6.50008Z" />
-                        </svg>
+                      <div className="slider-btn next-4 d-md-flex d-none pb-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>
+
                       </div>
                     </div>
                   </div>
@@ -2307,30 +2312,30 @@ function CarDeatilsPage() {
               <div className="partner-slider">
                 <h2 className="marquee_text2">
                 <Marquee autoFill="true">
-                  <img src="assets/img/home1/company-logo-01.png" alt="" />
-                  <img src="assets/img/home1/company-logo-02.png" alt="" />
-                  <img src="assets/img/home1/company-logo-03.png" alt="" />
-                  <img src="assets/img/home1/company-logo-04.png" alt="" />
-                  <img src="assets/img/home1/company-logo-05.png" alt="" />
-                  <img src="assets/img/home1/company-logo-06.png" alt="" />
-                  <img src="assets/img/home1/company-logo-01.png" alt="" />
-                  <img src="assets/img/home1/company-logo-02.png" alt="" />
-                  <img src="assets/img/home1/company-logo-03.png" alt="" />
-                  <img src="assets/img/home1/company-logo-04.png" alt="" />
-                  <img src="assets/img/home1/company-logo-05.png" alt="" />
-                  <img src="assets/img/home1/company-logo-06.png" alt="" />
-                  <img src="assets/img/home1/company-logo-01.png" alt="" />
-                  <img src="assets/img/home1/company-logo-02.png" alt="" />
-                  <img src="assets/img/home1/company-logo-03.png" alt="" />
-                  <img src="assets/img/home1/company-logo-04.png" alt="" />
-                  <img src="assets/img/home1/company-logo-05.png" alt="" />
-                  <img src="assets/img/home1/company-logo-06.png" alt="" />
-                  <img src="assets/img/home1/company-logo-01.png" alt="" />
-                  <img src="assets/img/home1/company-logo-02.png" alt="" />
-                  <img src="assets/img/home1/company-logo-03.png" alt="" />
-                  <img src="assets/img/home1/company-logo-04.png" alt="" />
-                  <img src="assets/img/home1/company-logo-05.png" alt="" />
-                  <img src="assets/img/home1/company-logo-06.png" alt="" />
+                  <Image src="/assets/img/home1/company-logo-01.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-02.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-03.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-04.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-05.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-06.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-01.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-02.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-03.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-04.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-05.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-06.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-01.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-02.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-03.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-04.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-05.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-06.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-01.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-02.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-03.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-04.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-05.png" width={50} height={50} alt="company logo" />
+                  <Image src="/assets/img/home1/company-logo-06.png" width={50} height={50} alt="company logo" />
                   </Marquee>
                 </h2>
               </div>
@@ -2338,6 +2343,8 @@ function CarDeatilsPage() {
           </div>
         </div>
       </div>
+      <Ad728x90 dataAdSlot="5962627056" />
+
       <div className="news-section two pt-90 pb-90">
         <div className="container">
           <div className="row mb-50 wow fadeInUp" data-wow-delay="200ms">
@@ -2352,7 +2359,7 @@ function CarDeatilsPage() {
             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
               <div className="news-card style-2">
                 <div className="news-img">
-                  <Link legacyBehavior href="/blog-details"><a><img src="assets/img/home1/news-01.png" alt="" /></a></Link>
+                  <Link legacyBehavior href="/blog-details"><a><img src="/assets/img/home1/news-01.png" alt="" /></a></Link>
                   <div className="date">
                     <Link legacyBehavior href="/blog-standard"><a>Buying Advice</a></Link>
                   </div>
@@ -2363,7 +2370,7 @@ function CarDeatilsPage() {
                   <div className="news-btm d-flex align-items-center justify-content-between">
                     <div className="author-area">
                       <div className="author-img">
-                        <img src="assets/img/home1/author-01.png" alt="" />
+                        <Image src="/assets/img/home1/author-01.png" width={50} height={50} alt="author" />
                       </div>
                       <div className="author-content">
                         <h6>Mr. Morris Mannu</h6>
@@ -2390,7 +2397,7 @@ function CarDeatilsPage() {
             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
               <div className="news-card style-2">
                 <div className="news-img">
-                  <Link legacyBehavior href="/blog-details"><a><img src="assets/img/home1/news-02.png" alt="" /></a></Link>
+                  <Link legacyBehavior href="/blog-details"><a><img src="/assets/img/home1/news-02.png" alt="" /></a></Link>
                   <div className="date">
                     <Link legacyBehavior href="/blog-standard"><a>Car Advice</a></Link>
                   </div>
@@ -2401,7 +2408,7 @@ function CarDeatilsPage() {
                   <div className="news-btm d-flex align-items-center justify-content-between">
                     <div className="author-area">
                       <div className="author-img">
-                        <img src="assets/img/home1/author-02.png" alt="" />
+                        <Image src="/assets/img/home1/author-02.png" width={50} height={50} alt="author"  />
                       </div>
                       <div className="author-content">
                         <h6>Mulish Kary</h6>
@@ -2439,7 +2446,7 @@ function CarDeatilsPage() {
                   <div className="news-btm d-flex align-items-center justify-content-between">
                     <div className="author-area">
                       <div className="author-img">
-                        <img src="assets/img/home1/author-03.png" alt="" />
+                        <Image src="/assets/img/home1/author-03.png"width={50} height={50} alt="author"  />
                       </div>
                       <div className="author-content">
                         <h6>Daniel Scoot</h6>

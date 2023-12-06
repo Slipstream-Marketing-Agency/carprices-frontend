@@ -1,3 +1,4 @@
+import Ad728x90 from '@/src/components/ads/Ad728x90'
 import MainLayout from '@/src/layout/MainLayout'
 import React from 'react'
 
@@ -5,6 +6,8 @@ import React from 'react'
 function Faq() {
   return (
     <MainLayout>
+      <Ad728x90 dataAdSlot="5962627056" />
+
         <div className="faq-page-wrap pt-100 mb-100">
             <div className="container">
             <div className="row g-lg-4 gy-5">

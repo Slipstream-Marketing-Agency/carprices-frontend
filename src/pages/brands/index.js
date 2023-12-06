@@ -7,11 +7,14 @@ import MainLayout from '@/src/layout/MainLayout'
 import ProductSearch from '@/src/components/common/ProductSearch'
 import ProductCategory from '@/src/utils/ProductCategory'
 import Testimonial from '@/src/components/Home5/Testimonial/Testimonial'
+import Ad728x90 from '@/src/components/ads/Ad728x90'
 function BrandCategoryPage() {
   return (
     <MainLayout>
         <ProductSearch/>
+        <Ad728x90 dataAdSlot="5962627056" />
         <ProductCategory/>
+        <Ad728x90 dataAdSlot="5962627056" />
         <div className="toprated-used-cars mb-100">
             <div className="container">
                 <div className="row">
@@ -61,6 +64,7 @@ function BrandCategoryPage() {
                 </div>
             </div>
         </div>
+
         <Testimonial/>
     </MainLayout>
   )

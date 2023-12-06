@@ -3,6 +3,8 @@ import Link from "next/link";
 import SwiperCore, { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import MainLayout from "@/src/layout/MainLayout";
+import Ad728x90 from "@/src/components/ads/Ad728x90";
+import Ad300x250 from "@/src/components/ads/Ad300x250";
 SwiperCore.use([Pagination, Autoplay, EffectFade, Navigation]);
 
 
@@ -23,6 +25,8 @@ function BlogStandardPage() {
     })
   return (
     <MainLayout>
+          <Ad728x90 dataAdSlot="5962627056" />
+
         <div className="blog-standard-page pt-100 mb-100">
             <div className="container">
                 <div className="row g-lg-4 gy-5">
@@ -243,25 +247,28 @@ function BlogStandardPage() {
                         </p>
                     </div>
                     </div>
-                    <div className="single-widgets sidebar-banner">
-                    <div className="product-content">
-                        <div className="text">
+                    <div className="single-widgets sidebar-banner" style={{backgroundColor:'rosybrown'}}>
+                    {/* <div className="product-content"> */}
+                        {/* <div className="text">
                         <h4><a href="#">Mercedes-Benz <span>( Model-S13)</span></a></h4>
                         <h6>For Summer Offer</h6>
                         </div>
                         <div className="offer-batch">
                         <h3>30%</h3>
                         <span>Discount</span>
-                        </div>
-                    </div>
-                    <div className="product-img">
+                        </div> */}
+                     <Ad300x250 dataAdSlot="5772723668" />
+                    {/* </div> */}
+                    {/* <div className="product-img">
                         <img src="assets/img/inner-page/sb-banner-img.png" alt="" />
-                    </div>
+                    </div> */}
                     </div>
                 </div>
                 </div>
             </div>
         </div>
+      <Ad728x90 dataAdSlot="5962627056" />
+
     </MainLayout>
   )
 }

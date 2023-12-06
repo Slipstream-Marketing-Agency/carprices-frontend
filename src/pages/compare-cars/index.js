@@ -11,6 +11,8 @@ import Link from "next/link";
 import MainLayout from "@/src/layout/MainLayout";
 import SelectComponent from "@/src/utils/SelectComponent";
 import Testimonial from "@/src/components/Home5/Testimonial/Testimonial";
+import Ad728x90 from "@/src/components/ads/Ad728x90";
+import Image from "next/image";
 function ComparePage() {
     const [isSticky, setIsSticky] = useState(false);
     const compateCareSettingsSlide = useMemo(()=>{
@@ -119,6 +121,7 @@ function ComparePage() {
 
   return (
     <MainLayout>
+          <Ad728x90 dataAdSlot="5962627056" />
         <div className="compare-page pt-100 mb-100">
             <div className="container">
                 <div className="row g-4 mb-50">
@@ -142,7 +145,7 @@ function ComparePage() {
                             <i className="bi bi-x" />
                             </div>
                             <div className="product-img">
-                            <img src="assets/img/home1/product-img-12.png" alt="image" />
+                            <Image src="/assets/img/home1/product-img-12.png" width={500} height={70} alt="car image" />
                             </div>
                             <div className="product-content">
                             <div className="content-top">
@@ -151,7 +154,7 @@ function ComparePage() {
                                 <h5><Link legacyBehavior href="/car-deatils"><a>Tesla Model S-2023</a></Link></h5>
                                 </div>
                                 <div className="company-logo">
-                                <img src="assets/img/home1/icon/tesla-01.svg" alt="" />
+                                <Image src="/assets/img/home1/icon/tesla-01.svg"  fill objectFit="contain"  alt="car logo" />
                                 </div>
                             </div>
                             <div className="change-model">
@@ -166,7 +169,7 @@ function ComparePage() {
                             <i className="bi bi-x" />
                             </div>
                             <div className="product-img">
-                            <img src="assets/img/home1/product-img-13.png" alt="image" />
+                            <Image src="/assets/img/home1/product-img-13.png"  width={500} height={70} alt="car image" />
                             </div>
                             <div className="product-content">
                             <div className="content-top">
@@ -175,7 +178,7 @@ function ComparePage() {
                                 <h5><a href="#">Benz AMG GT C-Class-2023</a></h5>
                                 </div>
                                 <div className="company-logo">
-                                <img src="assets/img/home1/icon/mercedes-01.svg" alt="" />
+                                <Image src="/assets/img/home1/icon/mercedes-01.svg"  fill objectFit="contain"  alt="car logo" />
                                 </div>
                             </div>
                             <div className="change-model">
@@ -417,6 +420,8 @@ function ComparePage() {
                         </table>
                         </div>
                     </div>
+          <Ad728x90 dataAdSlot="5962627056" />
+
                     <div className="single-compare mb-50" id="car-color">
                         <div className="car-colors">
                         <div className="title-and-slider-btn mb-25">
@@ -424,15 +429,16 @@ function ComparePage() {
                             <h5>Car Colors</h5>
                             </div>
                             <div className="slider-btn-group2">
+                                
+                          
+
                             <div className="slider-btn prev-2">
-                                <svg width={7} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z" />
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
+
                             </div>
                             <div className="slider-btn next-2">
-                                <svg width={7} height={13} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 6.50008L0 0L5.09091 6.50008L0 13L8 6.50008Z" />
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>
+
                             </div>
                             </div>
                         </div>
@@ -441,7 +447,7 @@ function ComparePage() {
                             <SwiperSlide className="swiper-slide">
                                 <div className="car-color-wrap">
                                 <div className="car-img">
-                                    <img src="assets/img/inner-page/color-car-01.png" alt="" />
+                                    <Image src="/assets/img/inner-page/color-car-01.png" width={400} height={70} alt="car image" />
                                 </div>
                                 <div className="content">
                                     <h6>Lamborghini Murciélago (Black)</h6>
@@ -451,7 +457,7 @@ function ComparePage() {
                             <SwiperSlide className="swiper-slide">
                                 <div className="car-color-wrap">
                                 <div className="car-img">
-                                    <img src="assets/img/inner-page/color-car-02.png" alt="" />
+                                    <Image src="/assets/img/inner-page/color-car-02.png" width={400} height={70} alt="car image" />
                                 </div>
                                 <div className="content">
                                     <h6>Lamborghini Murciélago (Blue)</h6>
@@ -461,7 +467,7 @@ function ComparePage() {
                             <SwiperSlide className="swiper-slide">
                                 <div className="car-color-wrap">
                                 <div className="car-img">
-                                    <img src="assets/img/inner-page/color-car-03.png" alt="" />
+                                    <Image src="/assets/img/inner-page/color-car-03.png" width={400} height={70} alt="car image" />
                                 </div>
                                 <div className="content">
                                     <h6>Lamborghini Murciélago (Pink)</h6>
@@ -471,7 +477,7 @@ function ComparePage() {
                             <SwiperSlide className="swiper-slide">
                                 <div className="car-color-wrap">
                                 <div className="car-img">
-                                    <img src="assets/img/inner-page/color-car-04.png" alt="" />
+                                    <Image src="/assets/img/inner-page/color-car-04.png" width={400} height={70} alt="car image" />
                                 </div>
                                 <div className="content">
                                     <h6>Lamborghini Murciélago (Orange)</h6>
@@ -571,8 +577,8 @@ function ComparePage() {
                         <ul className="comment">
                             <li>
                             <div className="single-comment-area">
-                                <div className="author-img">
-                                <img src="assets/img/inner-page/comment-author-01.png" alt="" />
+                                <div className="author-img ">
+                                <Image src="/assets/img/inner-page/comment-author-01.png" width={50} height={50} alt="author image" />
                                 </div>
                                 <div className="comment-content">
                                 <div className="author-name-deg">
@@ -592,7 +598,7 @@ function ComparePage() {
                                 <li>
                                 <div className="single-comment-area">
                                     <div className="author-img">
-                                    <img src="assets/img/inner-page/comment-author-02.png" alt="" />
+                                    <Image src="/assets/img/inner-page/comment-author-02.png" width={50} height={50} alt="author image" />
                                     </div>
                                     <div className="comment-content">
                                     <div className="author-name-deg">
@@ -612,7 +618,7 @@ function ComparePage() {
                                 <li>
                                 <div className="single-comment-area">
                                     <div className="author-img">
-                                    <img src="assets/img/inner-page/comment-author-03.png" alt="" />
+                                    <Image src="/assets/img/inner-page/comment-author-03.png" width={50} height={50} alt="author image" />
                                     </div>
                                     <div className="comment-content">
                                     <div className="author-name-deg">
@@ -634,7 +640,7 @@ function ComparePage() {
                             <li>
                             <div className="single-comment-area">
                                 <div className="author-img">
-                                <img src="assets/img/inner-page/comment-author-04.png" alt="" />
+                                <Image src="/assets/img/inner-page/comment-author-04.png" width={50} height={50} alt="author image" />
                                 </div>
                                 <div className="comment-content">
                                 <div className="author-name-deg">
@@ -654,7 +660,7 @@ function ComparePage() {
                             <li>
                             <div className="single-comment-area">
                                 <div className="author-img">
-                                <img src="assets/img/inner-page/comment-author-05.png" alt="" />
+                                <Image src="/assets/img/inner-page/comment-author-05.png" width={50} height={50} alt="author image"/>
                                 </div>
                                 <div className="comment-content">
                                 <div className="author-name-deg">
@@ -682,7 +688,7 @@ function ComparePage() {
                 </div>
             </div>
         </div>
-
+        <Ad728x90 dataAdSlot="5962627056" />
         <div className="compare-car-section mb-100">
             <div className="container-xl container-fluid">
                 <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
@@ -705,8 +711,9 @@ function ComparePage() {
                         <div className="col-lg-12">
                             <div className="compare-top">
                             <div className="single-car">
-                                <div className="car-img">
-                                <img src="assets/img/home1/compare-md-01.png" alt="car" />
+                                <div className="car-img  position-relative">
+                                <Image src="/assets/img/home1/compare-md-01.png" alt="car"   fill
+              objectFit="contain" />
                                 </div>
                                 <div className="content text-center">
                                 <h6 className="title"><a href="#">Mercedes-Benz C-Class-2023</a></h6>
@@ -718,7 +725,8 @@ function ComparePage() {
                             </div>
                             <div className="single-car">
                                 <div className="car-img">
-                                <img src="assets/img/home1/compare-md-02.png" alt="car" />
+                                <Image src="/assets/img/home1/compare-md-02.png"  fill='true'
+              objectFit="contain" alt="car" />
                                 </div>
                                 <div className="content text-center">
                                 <h6 className="title"><a href="#">Jeep Grand Cherokee-2023</a></h6>
@@ -791,7 +799,7 @@ function ComparePage() {
                             <div className="compare-top">
                             <div className="single-car">
                                 <div className="car-img">
-                                <img src="assets/img/home1/cc-suv.png" alt="car" />
+                                <Image src="/assets/img/home1/cc-suv.png" alt="car image" width={170} height={70} />
                                 </div>
                                 <div className="content text-center">
                                 <span>(SUV)</span>
@@ -804,7 +812,7 @@ function ComparePage() {
                             </div>
                             <div className="single-car">
                                 <div className="car-img">
-                                <img src="assets/img/home1/cc-toyota.png" alt="car" />
+                                <Image src="/assets/img/home1/cc-toyota.png" alt="car image" width={170} height={70} />
                                 </div>
                                 <div className="content text-center">
                                 <span>(Toyota)</span>
@@ -823,7 +831,7 @@ function ComparePage() {
                             <div className="compare-top">
                             <div className="single-car">
                                 <div className="car-img">
-                                <img src="assets/img/home1/cc-sucuki.png" alt="car" />
+                                <Image src="/assets/img/home1/cc-sucuki.png" alt="car image" width={170} height={70} />
                                 </div>
                                 <div className="content text-center">
                                 <span>(Suzuki)</span>
@@ -836,7 +844,7 @@ function ComparePage() {
                             </div>
                             <div className="single-car">
                                 <div className="car-img">
-                                <img src="assets/img/home1/cc-tesla.png" alt="car" />
+                                <Image src="/assets/img/home1/cc-tesla.png" alt="car image" width={170} height={70} />
                                 </div>
                                 <div className="content text-center">
                                 <span>(Tesla)</span>
@@ -855,7 +863,7 @@ function ComparePage() {
                             <div className="compare-top">
                             <div className="single-car">
                                 <div className="car-img">
-                                <img src="assets/img/home1/cc-merceds.png" alt="car" />
+                                <Image src="/assets/img/home1/cc-merceds.png" alt="car image" width={170} height={70} />
                                 </div>
                                 <div className="content text-center">
                                 <span>(Mercedes)</span>
@@ -868,7 +876,7 @@ function ComparePage() {
                             </div>
                             <div className="single-car">
                                 <div className="car-img">
-                                <img src="assets/img/home1/cc-bmw.png" alt="car" />
+                                <Image src="/assets/img/home1/cc-bmw.png" alt="car image" width={170} height={70}/>
                                 </div>
                                 <div className="content text-center">
                                 <span>(BMW)</span>
@@ -889,19 +897,16 @@ function ComparePage() {
                 <div className="row ">
                 <div className="col-lg-12 divider">
                     <div className="slider-btn-group style-2 justify-content-md-between justify-content-center">
-                    <div className="slider-btn prev-3 d-md-flex d-none">
-                        <svg width={11} height={19} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z" />
-                        </svg>
+                    <div className="slider-btn prev-3 d-md-flex d-none pb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
+
                     </div>
                     <div className="view-btn-area">
                         <p>There are Trending Car Available</p>
                         <a className="view-btn" href="#">View More</a>
                     </div>
-                    <div className="slider-btn next-3 d-md-flex d-none">
-                        <svg width={11} height={19} viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 6.50008L0 0L5.09091 6.50008L0 13L8 6.50008Z" />
-                        </svg>
+                    <div className="slider-btn next-3 d-md-flex d-none pb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>
                     </div>
                     </div>
                 </div>

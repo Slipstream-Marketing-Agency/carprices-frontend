@@ -1,9 +1,12 @@
+import Ad728x90 from '@/src/components/ads/Ad728x90'
 import MainLayout from '@/src/layout/MainLayout'
 import React from 'react'
 
 function CustomerReview() {
   return (
     <MainLayout>
+          <Ad728x90 dataAdSlot="5962627056" />
+
         <div className="customer-feedback-pages pt-100 pb-100">
           <div className="container">
             <div className="row mb-40 g-4">
@@ -211,6 +214,8 @@ function CustomerReview() {
             </div>
           </div>
         </div>
+        <Ad728x90 dataAdSlot="5962627056" />
+
     </MainLayout>
   )
 }

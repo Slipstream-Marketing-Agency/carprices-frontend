@@ -9,6 +9,8 @@ import "yet-another-react-lightbox/styles.css";
 import 'node_modules/react-modal-video/css/modal-video.css';
 import ModalVideo from 'react-modal-video';
 import MainLayout from "@/src/layout/MainLayout";
+import Ad728x90 from "@/src/components/ads/Ad728x90";
+
 SwiperCore.use([Pagination, Autoplay, EffectFade, Navigation]);
 
 
@@ -93,6 +95,7 @@ function About() {
 })
   return (
     <MainLayout>
+        <Ad728x90 dataAdSlot="5962627056" />
         <div className="welcome-banner-section pb-100 pt-100">
           <div className="container">
             <div className="row">

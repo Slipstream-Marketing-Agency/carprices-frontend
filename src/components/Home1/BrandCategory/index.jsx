@@ -14,10 +14,10 @@ function index() {
                 <Link legacyBehavior href="/single-brand-category" key={id}>
                   <a className="single-category1">
                     <div className="brand-icon">
-                      <img src={icons} alt="" />
+                      <img src={icons} alt="brand-icons"   />
                     </div>
                     <div className="brand-car">
-                      <img src={image} alt="" />
+                      <img src={image} alt="brand-car image" />
                     </div>
                   </a>
                 </Link>
