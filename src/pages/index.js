@@ -17,6 +17,63 @@ import TopRateUsedCars from "../components/Home1/TopRateUsedCars/index";
 import Blog from "../components/Home1/Blog/index";
 import Ad728x90 from "../components/ads/Ad728x90";
 export default function Home() {
+  const carDetails = [
+    {
+      carName: "Example Car 1",
+      carPrice: "$30,000",
+      emiStartingFrom: "$500",
+      carImage: "example_car_1.jpg"
+    },
+    {
+      carName: "Example Car 2",
+      carPrice: "$25,000",
+      emiStartingFrom: "$400",
+      carImage: "example_car_2.jpg"
+    },
+    {
+      carName: "Example Car 3",
+      carPrice: "$35,000",
+      emiStartingFrom: "$600",
+      carImage: "example_car_3.jpg"
+    },
+    {
+      carName: "Example Car 4",
+      carPrice: "$30,000",
+      emiStartingFrom: "$500",
+      carImage: "example_car_1.jpg"
+    },
+    {
+      carName: "Example Car 5",
+      carPrice: "$25,000",
+      emiStartingFrom: "$400",
+      carImage: "example_car_2.jpg"
+    },
+    {
+      carName: "Example Car 6",
+      carPrice: "$35,000",
+      emiStartingFrom: "$600",
+      carImage: "example_car_3.jpg"
+    },
+    {
+      carName: "Example Car 7",
+      carPrice: "$30,000",
+      emiStartingFrom: "$500",
+      carImage: "example_car_1.jpg"
+    },
+    {
+      carName: "Example Car 8",
+      carPrice: "$25,000",
+      emiStartingFrom: "$400",
+      carImage: "example_car_2.jpg"
+    },
+    {
+      carName: "Example Car 9",
+      carPrice: "$35,000",
+      emiStartingFrom: "$600",
+      carImage: "example_car_3.jpg"
+    },
+  ];
+
   return (
     <>
       <Modals />
@@ -26,9 +83,9 @@ export default function Home() {
       <QuickLinkArea />
       <Ad728x90 dataAdSlot="5962627056" />
       {/* <BrandCategory /> */}
-      <MostSearchedUsersCar />
+      <RecentLaunchedCar heading={"Most Popular New Cars"} carDetails={carDetails}/>
       <Ad728x90 dataAdSlot="5962627056" />
-      <RecentLaunchedCar />
+      <MostSearchedUsersCar heading={"Top Searched Cars"} carDetails={carDetails} />
       <Ad728x90 dataAdSlot="5962627056" />
       <WhyChoose />
       <UpcomingCars />

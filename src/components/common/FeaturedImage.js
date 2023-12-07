@@ -8,7 +8,7 @@ export default function FeaturedImage({ src, alt, title, id, width, height }) {
   
   const imageUrl =
     src === undefined || src === null
-      ? "/assets/images/placeholders/car-placeholder.png"
+      ? "/assets/img/placeholders/car-placeholder.png"
       : process.env.NEXT_PUBLIC_S3_URL + src;
 
   const [imageLoaded, setImageLoaded] = useState(false);

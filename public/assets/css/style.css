@@ -24716,11 +24716,13 @@ button {
 } */
 
 .pos_banner_btn {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   bottom: -8%;
   width: 85%;
-  margin: 0px 27px;
+  margin: 0px 27px; */
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 .pos_banner_btn .btn {

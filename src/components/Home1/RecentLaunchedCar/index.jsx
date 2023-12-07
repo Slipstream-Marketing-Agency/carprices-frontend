@@ -2,17 +2,17 @@ import React from 'react'
 import Link from 'next/link'
 import { useCountdownTimer } from '../../hooks/useCountdownTimer'
 
-function index() {
+function index({heading,carDetails}) {
   const endTime = "2023-10-23";
   const { days, hours, minutes, seconds } = useCountdownTimer(endTime)
   return (
-    <div className="recent-product-section mb-100">
+    <div className="recent-product-section mb-50">
       <div className="container">
-        <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
+        <div className="row mt-50 mb-30 wow fadeInUp" data-wow-delay="200ms">
           <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
             <div className="section-title1">
-              <span>Recent Launched </span>
-              <h2>Recent Launched Car </h2>
+              {/* <span>Recent Launched </span> */}
+              <h2>{heading}</h2>
             </div>
             <ul className="nav nav-tabs" id="myTab6" role="tablist">
               <li className="nav-item" role="presentation">
@@ -35,7 +35,8 @@ function index() {
             <div className="tab-content" id="myTabContent6">
               <div className="tab-pane fade show active" id="popular-car1" role="tabpanel" aria-labelledby="popular-car1-tab">
                 <div className="row g-4 justify-content-center">
-                  <div className="col-lg-4 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="200ms">
+                  {carDetails?.map((car,index)=>(
+                    <div className="col-lg-4 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="200ms">
                     <div className="product-card">
                       <div className="product-img">
                         <a href="#" className="fav">
@@ -53,10 +54,10 @@ function index() {
                         </div>
                       </div>
                       <div className="product-content">
-                        <h5><Link legacyBehavior href="/car-deatils"><a>Mercedes-Benz C-Class-2023</a></Link></h5>
+                        <h5><Link legacyBehavior href="/car-deatils"><a>{car.carName}</a></Link></h5>
                         <div className="price-location">
                           <div className="price">
-                            <strong>$7,656.00</strong>
+                            <strong>{car.carPrice}</strong>
                           </div>
                           <div className="location">
                             <a href="#"><i className="bi bi-geo-alt" /> Panama City</a>
@@ -126,7 +127,8 @@ function index() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="300ms">
+                  )) }
+                  {/* <div className="col-lg-4 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="300ms">
                     <div className="product-card">
                       <div className="product-img">
                         <a href="#" className="fav">
@@ -583,7 +585,7 @@ function index() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="tab-pane fade" id="new-car2" role="tabpanel" aria-labelledby="new-car2-tab">
