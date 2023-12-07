@@ -182,7 +182,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   line-height: 1.4;
   color: var(--title-color);
@@ -516,7 +516,7 @@ p {
 }
 
 .section-title1 span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -531,7 +531,7 @@ p {
 }
 .section-title1 h2 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 40px;
   line-height: 1.3;
@@ -539,24 +539,24 @@ p {
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   .section-title1 h2 {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 @media (max-width: 1399px) {
   .section-title1 h2 {
-    font-size: 38px;
+    font-size: 30px;
   }
 }
 @media (max-width: 576px) {
   .section-title1 h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
 .section-title-2 h2 {
   color: var(--title-color);
   font-size: 40px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   margin-bottom: 5px;
   line-height: 1.3;
@@ -790,7 +790,7 @@ p {
 .primary-btn7 {
   border-radius: 5px;
   background-color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   color: var(--white-color);
@@ -839,7 +839,7 @@ p {
 }
 
 .view-btn {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   color: var(--title-color);
@@ -1287,7 +1287,7 @@ p {
   gap: 30px;
 }
 .top-bar.style-2 .top-bar-items ul li a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -1397,7 +1397,7 @@ p {
   line-height: 1;
 }
 .top-bar.style-2 .topbar-right .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1463,7 +1463,7 @@ p {
   line-height: 1;
 }
 .top-bar.style-5 .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1605,7 +1605,7 @@ p {
   line-height: 1;
 }
 .top-bar.style-6 .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1750,7 +1750,7 @@ p {
 .signUp-modal .modal-dialog .modal-content .modal-header h4 {
   color: #000;
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 700;
 }
@@ -1764,7 +1764,7 @@ p {
 }
 .signUp-modal .modal-dialog .modal-content .modal-header p button {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   background-color: transparent;
@@ -1777,7 +1777,7 @@ p {
 }
 .signUp-modal .modal-dialog .modal-content .form-inner label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
@@ -1823,7 +1823,7 @@ p {
 }
 .signUp-modal .modal-dialog .modal-content .form-agreement label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -1856,7 +1856,7 @@ p {
 }
 .signUp-modal .modal-dialog .modal-content .form-agreement .forgot-pass {
   color: #2A64F8;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 13px;
   font-weight: 600;
   transition: 0.35s;
@@ -2002,7 +2002,7 @@ p {
 }
 .adSearch-modal .modal-dialog .modal-content .form-inner label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
@@ -2070,7 +2070,7 @@ p {
 }
 .adSearch-modal .modal-dialog .modal-content h5 {
   color: #000;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
 }
@@ -2150,7 +2150,7 @@ header.style-1.style-2 .menu-button svg {
   fill: var(--white-color);
 }
 header.style-1.style-2 .menu-button span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -2220,7 +2220,7 @@ header.style-1 .nav-right {
   }
 }
 header.style-1 .nav-right .modal-btn {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   display: flex;
@@ -2338,7 +2338,7 @@ header.style-1 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   margin-bottom: 10px;
 }
 header.style-1 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   color: var(--title-color);
@@ -2349,7 +2349,7 @@ header.style-1 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   line-height: 1;
 }
 header.style-1 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -2421,7 +2421,7 @@ header.style-1 .nav-right .dropdown .cart-footer .pricing-area ul {
   padding: 10px 0px 10px;
 }
 header.style-1 .nav-right .dropdown .cart-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   color: var(--title-color);
@@ -2558,7 +2558,7 @@ header.style-1 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-1 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -2688,7 +2688,7 @@ header.style-1 .main-menu ul > li a {
   text-transform: capitalize;
   padding: 15px 20px;
   position: relative;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
@@ -2964,7 +2964,7 @@ header.style-1 .main-menu ul > li .mega-menu .menu-row .menu-single-item:last-ch
 header.style-1 .main-menu ul > li .mega-menu .menu-row .menu-single-item h6 {
   margin-bottom: 10px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -2993,7 +2993,7 @@ header.style-1 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li
 }
 header.style-1 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: flex;
@@ -3187,7 +3187,7 @@ header.style-1 .main-menu .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-1 .main-menu .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -3403,7 +3403,7 @@ header.style-2 .menu-button svg {
   transition: 0.35s;
 }
 header.style-2 .menu-button span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -3426,7 +3426,7 @@ header.style-2 .nav-right {
   }
 }
 header.style-2 .nav-right .modal-btn {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   display: flex;
@@ -3544,7 +3544,7 @@ header.style-2 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   margin-bottom: 10px;
 }
 header.style-2 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   color: var(--title-color);
@@ -3555,7 +3555,7 @@ header.style-2 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   line-height: 1;
 }
 header.style-2 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -3627,7 +3627,7 @@ header.style-2 .nav-right .dropdown .cart-footer .pricing-area ul {
   padding: 10px 0px 10px;
 }
 header.style-2 .nav-right .dropdown .cart-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   color: var(--title-color);
@@ -3764,7 +3764,7 @@ header.style-2 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-2 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -3801,7 +3801,7 @@ header.style-2 .nav-right .modal-dialog .modal-content .modal-header {
   border-bottom: 1px solid rgba(238, 238, 238, 0.933333);
 }
 header.style-2 .nav-right .modal-dialog .modal-content .modal-header .modal-title {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 24px;
   color: var(--title-color);
@@ -3923,7 +3923,7 @@ header.style-2 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   padding-right: 40px;
 }
 header.style-2 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   color: var(--title-color);
@@ -3935,7 +3935,7 @@ header.style-2 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   line-height: 1;
 }
 header.style-2 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.5;
@@ -4008,7 +4008,7 @@ header.style-2 .nav-right .modal-dialog .modal-content .modal-footer .pricing-ar
   width: 100%;
 }
 header.style-2 .nav-right .modal-dialog .modal-content .modal-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   color: var(--title-color);
@@ -4118,7 +4118,7 @@ header.style-2 .main-menu ul > li a {
   text-transform: capitalize;
   padding: 15px 20px;
   position: relative;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
@@ -4391,7 +4391,7 @@ header.style-2 .main-menu ul > li .mega-menu .menu-row .menu-single-item:last-ch
 header.style-2 .main-menu ul > li .mega-menu .menu-row .menu-single-item h6 {
   margin-bottom: 10px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -4420,7 +4420,7 @@ header.style-2 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li
 }
 header.style-2 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: flex;
@@ -4881,7 +4881,7 @@ header.style-3 .main-menu ul > li a {
   text-transform: capitalize;
   padding: 24px 20px;
   position: relative;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
@@ -5170,7 +5170,7 @@ header.style-3 .main-menu ul > li .mega-menu .menu-row .menu-single-item:last-ch
 header.style-3 .main-menu ul > li .mega-menu .menu-row .menu-single-item h6 {
   margin-bottom: 10px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -5199,7 +5199,7 @@ header.style-3 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li
 }
 header.style-3 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: flex;
@@ -5420,7 +5420,7 @@ header.style-3 .main-menu .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-3 .main-menu .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -5656,7 +5656,7 @@ header.style-4 .menu-button svg {
   transition: 0.35s;
 }
 header.style-4 .menu-button span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -5714,7 +5714,7 @@ header.style-4 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-4 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -5751,7 +5751,7 @@ header.style-4 .nav-right .modal-dialog .modal-content .modal-header {
   border-bottom: 1px solid rgba(238, 238, 238, 0.933333);
 }
 header.style-4 .nav-right .modal-dialog .modal-content .modal-header .modal-title {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 24px;
   color: var(--title-color);
@@ -5873,7 +5873,7 @@ header.style-4 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   padding-right: 40px;
 }
 header.style-4 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   color: var(--title-color);
@@ -5885,7 +5885,7 @@ header.style-4 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   line-height: 1;
 }
 header.style-4 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.5;
@@ -5958,7 +5958,7 @@ header.style-4 .nav-right .modal-dialog .modal-content .modal-footer .pricing-ar
   width: 100%;
 }
 header.style-4 .nav-right .modal-dialog .modal-content .modal-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   color: var(--title-color);
@@ -6091,7 +6091,7 @@ header.style-4 .main-menu ul > li a {
   text-transform: capitalize;
   padding: 15px 20px;
   position: relative;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-transform: capitalize;
   font-weight: 600;
   font-size: 13px;
@@ -6483,7 +6483,7 @@ header.style-5 .nav-right {
   }
 }
 header.style-5 .nav-right .modal-btn {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   display: flex;
@@ -6601,7 +6601,7 @@ header.style-5 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   margin-bottom: 10px;
 }
 header.style-5 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   color: var(--title-color);
@@ -6612,7 +6612,7 @@ header.style-5 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   line-height: 1;
 }
 header.style-5 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -6684,7 +6684,7 @@ header.style-5 .nav-right .dropdown .cart-footer .pricing-area ul {
   padding: 10px 0px 10px;
 }
 header.style-5 .nav-right .dropdown .cart-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   color: var(--title-color);
@@ -6821,7 +6821,7 @@ header.style-5 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-5 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -6832,7 +6832,7 @@ header.style-5 .nav-right .hotline-area .content h6 a:hover {
   color: var(--primary-color1);
 }
 header.style-5 .nav-right .primary-btn1 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   padding: 5px 16px;
 }
 @media (max-width: 991px) {
@@ -6868,7 +6868,7 @@ header.style-5 .nav-right .modal-dialog .modal-content .modal-header {
   border-bottom: 1px solid rgba(238, 238, 238, 0.933333);
 }
 header.style-5 .nav-right .modal-dialog .modal-content .modal-header .modal-title {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 24px;
   color: var(--title-color);
@@ -6990,7 +6990,7 @@ header.style-5 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   padding-right: 40px;
 }
 header.style-5 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   color: var(--title-color);
@@ -7002,7 +7002,7 @@ header.style-5 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   line-height: 1;
 }
 header.style-5 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.5;
@@ -7075,7 +7075,7 @@ header.style-5 .nav-right .modal-dialog .modal-content .modal-footer .pricing-ar
   width: 100%;
 }
 header.style-5 .nav-right .modal-dialog .modal-content .modal-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   color: var(--title-color);
@@ -7234,7 +7234,7 @@ header.style-5 .main-menu ul > li a {
   text-transform: capitalize;
   padding: 15px 20px;
   position: relative;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
@@ -7511,7 +7511,7 @@ header.style-5 .main-menu ul > li .mega-menu .menu-row .menu-single-item:last-ch
 header.style-5 .main-menu ul > li .mega-menu .menu-row .menu-single-item h6 {
   margin-bottom: 10px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -7540,7 +7540,7 @@ header.style-5 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li
 }
 header.style-5 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: flex;
@@ -7764,7 +7764,7 @@ header.style-5 .main-menu .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-5 .main-menu .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -7928,7 +7928,7 @@ header.style-6 .nav-right {
   }
 }
 header.style-6 .nav-right .modal-btn {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   display: flex;
@@ -8040,7 +8040,7 @@ header.style-6 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   margin-bottom: 10px;
 }
 header.style-6 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   color: var(--title-color);
@@ -8051,7 +8051,7 @@ header.style-6 .nav-right .dropdown .cart-body ul .single-item .item-area .main-
   line-height: 1;
 }
 header.style-6 .nav-right .dropdown .cart-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -8123,7 +8123,7 @@ header.style-6 .nav-right .dropdown .cart-footer .pricing-area ul {
   padding: 10px 0px 10px;
 }
 header.style-6 .nav-right .dropdown .cart-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   color: var(--title-color);
@@ -8260,7 +8260,7 @@ header.style-6 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-6 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -8268,7 +8268,7 @@ header.style-6 .nav-right .hotline-area .content h6 a {
   transition: 0.5s;
 }
 header.style-6 .nav-right .primary-btn6 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   padding: 5px 16px;
 }
 @media (max-width: 991px) {
@@ -8304,7 +8304,7 @@ header.style-6 .nav-right .modal-dialog .modal-content .modal-header {
   border-bottom: 1px solid rgba(238, 238, 238, 0.933333);
 }
 header.style-6 .nav-right .modal-dialog .modal-content .modal-header .modal-title {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 24px;
   color: var(--title-color);
@@ -8426,7 +8426,7 @@ header.style-6 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   padding-right: 40px;
 }
 header.style-6 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   color: var(--title-color);
@@ -8438,7 +8438,7 @@ header.style-6 .nav-right .modal-dialog .modal-content .modal-body ul .single-it
   line-height: 1;
 }
 header.style-6 .nav-right .modal-dialog .modal-content .modal-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.5;
@@ -8512,7 +8512,7 @@ header.style-6 .nav-right .modal-dialog .modal-content .modal-footer .pricing-ar
   width: 100%;
 }
 header.style-6 .nav-right .modal-dialog .modal-content .modal-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 15px;
   color: var(--title-color);
@@ -8671,7 +8671,7 @@ header.style-6 .main-menu ul > li a {
   text-transform: capitalize;
   padding: 15px 20px;
   position: relative;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
@@ -8911,7 +8911,7 @@ header.style-6 .main-menu ul > li .mega-menu .menu-row .menu-single-item:last-ch
 header.style-6 .main-menu ul > li .mega-menu .menu-row .menu-single-item h6 {
   margin-bottom: 10px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -8940,7 +8940,7 @@ header.style-6 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li
 }
 header.style-6 .main-menu ul > li .mega-menu .menu-row .menu-single-item > ul li a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: flex;
@@ -9131,7 +9131,7 @@ header.style-6 .main-menu .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-6 .main-menu .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -9392,7 +9392,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 .header-and-filter-area .filter-area .hotline-area .content h6 a {
   color: var(--primary-color1);
   font-size: 20px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   line-height: 1;
   transition: 0.35s;
@@ -9457,7 +9457,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   text-transform: capitalize;
   padding: 32px 9px;
   position: relative;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
@@ -9619,7 +9619,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .sidebar-menu ul > li .mega-menu .menu-row .menu-single-item h6 {
   margin-bottom: 10px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   color: #b5b5b5;
@@ -9644,7 +9644,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .sidebar-menu ul > li .mega-menu .menu-row .menu-single-item > ul li a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 12px;
   font-weight: 600;
   border-bottom: 1px solid rgba(233, 228, 228, 0.5);
@@ -9895,7 +9895,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   line-height: 1;
 }
 .sidebar-menu .hotline-area .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -10093,25 +10093,11 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 /*=====================================
      5. Banner
 ========================================*/
-.transCar{
-  position:absolute;
-  top:100px;
-  left:-500px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  animation: carMove 2s ease  ;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-@keyframes carMove{
-  to{
-    left:70px;
-  }
-}
+
 .banner-section1 {
   /* background-image: url(../img/home1/bannar1-bg.png), linear-gradient(#FAFAFA, #FAFAFA); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(../img/carbackgroundImage.jpg);
-    filter: brightness(100%);
+    
 
   /* background: rgb(255,255,255); */
   /* background: linear-gradient(189deg, rgba(255,255,255,1) 0%, rgba(39,91,167,1) 100%); */
@@ -10119,15 +10105,39 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   background-repeat: no-repeat;
   padding: 8px 0;
   padding-bottom: 30px;
+  
 }
-@media(max-width:650px){
+@media(max-width:1200px){
   .transCar{
-    animation: none;
+    display: none;
   }
- 
- 
 }
+.carContainer{
+  position:relative;
+  padding-bottom:30px;
+}
+.transCar{
+  position:absolute;
+  top:-20px;
+  left:-500px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  animation: carMove 2s ease  ;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes carMove{
+  to{
+    left:70px;
+  }
+}
+
+
+
+
 .banner-section1 .banner-content {
+  margin-top: 40px;
   max-width: 705px;
   width: 100%;
   
@@ -10135,7 +10145,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   /* for transparent car */
 }
 .banner-section1 .banner-content .sub-title {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 20px;
   display: flex;
@@ -10151,7 +10161,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 .banner-section1 .banner-content h1 {
   font-family: var(--font-gilroy);
   font-weight: 700;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1.05;
    /* color: var(--title-color); */
   margin-bottom: 20px;
@@ -10159,16 +10169,19 @@ header.style-6 .main-menu .hotline-area .content h6 a {
     color: var(--white-color);
     text-shadow: 0 0 10px black;
 }
-@media (max-width: 1399px) {
-  .banner-section1 .banner-content h1 {
-    font-size: 60px;
-  }
+.handIcon{
+  color:var(--white-color);
+  width:20px;
+  height:20px;
+  /* background-color: white; */
 }
-@media (max-width: 576px) {
-  .banner-section1 .banner-content h1 {
-    font-size: 50px;
-  }
+.hintText{
+  margin-left: 10px;
+  font-size: 15px;
+  color:var(--white-color);
 }
+
+
 .banner-section1 .banner-content p {
   font-size: 20px;
   color: var(--text-color);
@@ -10276,7 +10289,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .banner-section1 .car-filter-area {
   /* background-color: var(--white-color); */
-  padding: 40px 30px;
+  margin-top:35px;
   border-radius: 5px;
 }
 @media (max-width: 1199px) {
@@ -10286,7 +10299,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   }
 }
 .banner-section1 .car-filter-area h4 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 26px;
   color: var(--title-color);
@@ -10339,7 +10352,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 .banner-section1 .car-filter-area .car-type li button {
   padding: 0;
   border: none;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   display: flex;
@@ -10397,7 +10410,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   font-size: 15px;
   font-weight: 600;
   color:var(--white-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
 }
 .banner-section1 .car-filter-area .advanced-btn {
   padding-top: 12px;
@@ -10463,7 +10476,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   width: 100%;
 }
 .banner-section2 .banner-content h1 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -10570,7 +10583,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   gap: 50px;
   color: #FFF;
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: gilroy;
   font-weight: 600;
 }
 
@@ -10671,7 +10684,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   visibility: hidden;
 }
 .quick-link-area ul li a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -11022,7 +11035,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   line-height: 1;
 }
 .product-card .product-content h5 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
@@ -11054,14 +11067,14 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   transform: translateY(-50%);
 }
 .product-card .product-content .price-location .price strong {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
   color: var(--title-color);
 }
 .product-card .product-content .price-location .price del {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
@@ -11143,7 +11156,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   padding-top: 20px;
 }
 .product-card .product-content .content-btm .view-btn2 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -11182,7 +11195,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .product-card.style-2 .product-content .content-top .price {
   margin-bottom: 7px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -11394,7 +11407,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
      9. why Choose Section
 ========================================*/
 .why-choose-area {
-  background-image: url(../img/home1/why-choose-bg.png);
+  /* background-image: url(../img/home1/why-choose-bg.png); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11441,7 +11454,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-bottom: 15px;
 }
 .why-choose-area .choose-card .choose-top h5 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -11463,7 +11476,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   padding-top: 20px;
 }
 .why-choose-area .choose-card .more-btn a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -11502,7 +11515,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 .why-choose-area .our-activetis .single-activiti .content .number {
   display: flex;
   align-items: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -11546,7 +11559,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   padding-top: 30px;
 }
 .why-choose-area .trustpilot-review > strong {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -11802,7 +11815,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   padding: 6px 6px 6px 20px;
 }
 .top-rate-used-car-area .form-inner label {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 16px;
   color: var(--title-color);
@@ -11861,7 +11874,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-bottom: 5px;
 }
 .compare-car-section .single-compare-card .compare-top .single-car .content h6.title a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -11872,7 +11885,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   color: var(--primary-color1);
 }
 .compare-car-section .single-compare-card .compare-top .single-car .content h6.price {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -11890,7 +11903,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color1);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 12px;
   color: var(--white-color);
@@ -11914,7 +11927,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 .compare-car-section .single-compare-card .compare-btm a {
   text-align: center;
   justify-content: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   padding: 7px 20px;
 }
@@ -11960,7 +11973,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
   justify-content: center;
   background-color: #323232;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 12px;
   color: var(--white-color);
@@ -11984,7 +11997,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 .compare-car-section .single-compare-card.style-2 .compare-btm .primary-btn2 {
   text-align: center;
   justify-content: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   padding: 18px 20px;
   color: var(--white-color);
@@ -12014,7 +12027,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .compare-car-section.two .nav-tabs .nav-item .nav-link {
   color: #FFF;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   border: none;
@@ -12032,7 +12045,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .compare-car-section.two .compare-btn-and-slider-btn .see-all-btn a {
   color: #FFF;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   display: flex;
@@ -12160,7 +12173,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-bottom: 20px;
 }
 .shop-card .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -12179,7 +12192,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .shop-card .content .content-btm .price h6 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -12187,7 +12200,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .shop-card .content .content-btm a {
   font-size: 13px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   padding: 2px 17px;
   justify-content: center;
   color:var(--white-color)
@@ -12255,7 +12268,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .shop-card2 .content .cart-btn .primary-btn2 {
   font-size: 13px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   padding: 2px 17px;
   justify-content: center;
 }
@@ -12293,7 +12306,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-bottom: 15px;
 }
 .shop-card2 .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
@@ -12312,7 +12325,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .shop-card2 .content .content-btm .price h6 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
@@ -12339,7 +12352,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .shop-car-parts-section .text-slider h2 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 70px;
   line-height: 1;
@@ -12675,7 +12688,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
 }
 .customar-feedback-area .customer-feedback-left .trustpilot h5 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -12783,7 +12796,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .customar-feedback-area .customer-feedback-right .feedback-card .author-name h6 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -12831,7 +12844,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
 }
 .customar-feedback-area .sub-title h6 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -12874,7 +12887,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
 }
 .trusted-partner-section .sub-title h6 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -12978,7 +12991,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-bottom: 20px;
 }
 .news-section .news-card .content > h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
@@ -13003,7 +13016,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .news-section .news-card .content .news-btm .author-area .author-content h6 {
   margin-bottom: 3px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
@@ -13208,7 +13221,7 @@ footer .footer-widget .widget-title h5 {
   margin-bottom: 0;
   color: var(--white-color);
   font-size: 20px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
 }
 footer .footer-widget .menu-container ul {
@@ -13350,7 +13363,7 @@ footer .footer-center .contact-area .hotline-area .content h6 {
 footer .footer-center .contact-area .hotline-area .content h6 a {
   color: var(--primary-color1);
   font-size: 20px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   line-height: 1;
   transition: 0.35s;
@@ -13500,7 +13513,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .explore-btn2 {
   color: var(--title-color);
   font-size: 16px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -13581,7 +13594,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .dream-car-area .car-category .content h6 {
   color: var(--title-color);
   font-size: 14px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   margin-bottom: 2px;
   line-height: 20px;
@@ -13589,7 +13602,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .dream-car-area .car-category .content span {
   color: var(--text-color);
   font-size: 14px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   margin-bottom: 0;
   line-height: 20px;
@@ -13739,7 +13752,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .featured-car-section .feature-card .product-content .price strong {
   color: var(--white-color);
   font-size: 20px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   line-height: 1;
 }
@@ -13749,7 +13762,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .featured-car-section .feature-card .product-content h5 a {
   color: var(--white-color);
   font-size: 18px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
 }
 .featured-car-section .feature-card .product-content .features {
@@ -13964,7 +13977,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .product-card2 .product-content .price strong {
   color: var(--title-color);
   font-size: 18px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   line-height: 1;
 }
@@ -13975,7 +13988,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .product-card2 .product-content h6 a {
   color: var(--text-color);
   font-size: 16px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   transition: 0.35s;
 }
@@ -14066,7 +14079,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .how-it-work-section .video-btn a {
   color: var(--white-color);
   font-size: 15px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -14139,7 +14152,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   border-radius: 50%;
   color: var(--white-color);
   font-size: 15px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   background-color: var(--primary-color1);
   display: flex;
@@ -14162,7 +14175,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .how-it-work-section .single-work-process .content h6 {
   color: var(--title-color);
   font-size: 18px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -14208,7 +14221,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   padding-top: 30px;
 }
 .how-it-work-section .trustpilot-review > strong {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -14304,7 +14317,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   border-radius: 50%;
   color: var(--black-color2);
   font-size: 15px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -14383,7 +14396,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home2-compare-area .compare-content .compare-wrap .compare-right h6 a {
   color: var(--white-color);
   font-size: 24px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   transition: 0.35s;
 }
@@ -14395,7 +14408,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home2-compare-area .compare-content .compare-wrap .compare-right .price strong {
   color: var(--primary-color1);
   font-size: 20px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
 }
 .home2-compare-area .compare-content .compare-wrap .divider {
@@ -14585,7 +14598,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home2-testimonial-section .feedback-card .author-name h6 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -14665,7 +14678,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-banner-area .banner-wrapper .banner-content h1 {
   color: var(--white-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 75px;
   font-weight: 700;
   line-height: 1.1;
@@ -14697,7 +14710,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-banner-area .banner-wrapper .banner-content .banner-feature ul li {
   color: var(--white-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   position: relative;
@@ -14733,7 +14746,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   padding-top: 40px;
 }
 .home3-banner-area .banner-wrapper .banner-content .trustpilot-review > strong {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -14866,7 +14879,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .brand-category-section .brand-category-card .category-content h5 a {
   color: var(--white-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   transition: 0.35s;
@@ -15088,7 +15101,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   line-height: 1;
 }
 .product-card3 .product-content h5 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
@@ -15120,7 +15133,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   transform: translateY(-50%);
 }
 .product-card3 .product-content .price-location .price strong {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -15166,7 +15179,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-card3.style-2 .product-content .price-tag span {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 7% 50%);
@@ -15339,7 +15352,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   margin-bottom: 10px;
   line-height: 1;
   color: var(--white-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 26px;
   font-weight: 700;
 }
@@ -15348,7 +15361,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-inner-banner .content h5 a {
   color: var(--white-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   transition: 0.35s;
@@ -15386,7 +15399,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home3-inner-banner .offer-tag .offer-content p {
   margin-bottom: 0;
   color: var(--white-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
 }
@@ -15401,7 +15414,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   align-items: center;
   gap: 10px;
   color: var(--primary-color1);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 25px;
   font-weight: 700;
 }
@@ -15529,7 +15542,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-compare-section .home3-compare .compare-content .content-top .single-content h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   transition: 0.35s;
@@ -15541,7 +15554,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home3-compare-section .home3-compare .compare-content .content-top .single-content .price h6 {
   margin-bottom: 0;
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
 }
@@ -15695,7 +15708,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-testimonial-area .testimonial-wrap .content p {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
@@ -15710,7 +15723,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home3-testimonial-area .testimonial-wrap .author-name h5 {
   color: var(--title-color);
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0;
@@ -15723,7 +15736,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   gap: 10px;
 }
 .home3-testimonial-area .trustpilot-review > strong {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -15793,7 +15806,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   }
 }
 .home4-banner-area .banner-content h1 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -15895,7 +15908,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 ========================================*/
 .explore-more-btn a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   transition: 0.35s;
@@ -15926,7 +15939,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 
 .home3-available-car .sub-title h5 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
 }
@@ -15938,7 +15951,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-available-car .explore-btn a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   display: flex;
@@ -15997,7 +16010,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home3-available-car .car-category .content h6 {
   color: var(--title-color);
   font-size: 14px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   margin-bottom: 2px;
   line-height: 20px;
@@ -16005,7 +16018,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home3-available-car .car-category .content span {
   color: var(--text-color);
   font-size: 14px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   margin-bottom: 0;
   line-height: 20px;
@@ -16029,7 +16042,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-available-car .car-filter-area h4 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 26px;
   font-weight: 700;
   line-height: 34px;
@@ -16085,7 +16098,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-available-car .car-filter-area .form-inner .single-category h6 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0;
@@ -16095,7 +16108,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home3-available-car .car-filter-area .form-inner .primary-btn1 {
   font-size: 16px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -16244,7 +16257,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-card4 .product-content h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 600;
   transition: 0.35s;
@@ -16308,7 +16321,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-card4 .product-content .button-and-price .primary-btn3 {
   font-size: 15px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   padding: 5px 14px;
 }
 .product-card4 .product-content .button-and-price .price-area {
@@ -16327,7 +16340,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-card4 .product-content .button-and-price .price-area h6 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 0;
@@ -16335,7 +16348,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-card4 .product-content .button-and-price .price-area del {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   padding-top: 8px;
@@ -16372,7 +16385,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-card4.style-2 .product-content .button-and-price .primary-btn3 {
   font-size: 15px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   padding: 5px 18px;
 }
 .product-card4:hover {
@@ -16493,7 +16506,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   border: none;
   color: var(--text-color);
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   border-radius: 25px;
@@ -16548,7 +16561,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home4-inner-banner-section .section-title-2 .sell-btn-and-contact-info > span {
   color: rgba(255, 255, 255, 0.5);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
 }
@@ -16592,7 +16605,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home4-inner-banner-section .section-title-2 .sell-btn-and-contact-info .hotline-area .content h6 a {
   color: var(--primary-color1);
   font-size: 20px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   line-height: 1;
   transition: 0.35s;
@@ -16677,7 +16690,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home4-inner-banner-section.style-2 .section-title-2 .sell-btn-and-contact-info > span {
   color: rgba(255, 255, 255, 0.5);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
 }
@@ -16721,7 +16734,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home4-inner-banner-section.style-2 .section-title-2 .sell-btn-and-contact-info .hotline-area .content h6 a {
   color: var(--white-color);
   font-size: 20px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   line-height: 1;
   transition: 0.35s;
@@ -16793,7 +16806,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home4-comparing-car-area .home4-compare .compare-content .content-top .single-content h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   transition: 0.35s;
@@ -16805,7 +16818,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home4-comparing-car-area .home4-compare .compare-content .content-top .single-content .price h6 {
   margin-bottom: 0;
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
 }
@@ -16890,7 +16903,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   z-index: 2;
 }
 .home5-banner-area .banner-content h1 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -17056,7 +17069,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-card5 .product-img .product-price span {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
@@ -17150,7 +17163,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   line-height: 1;
 }
 .product-card5 .product-content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
@@ -17222,7 +17235,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   padding-top: 20px;
 }
 .product-card5 .product-content .content-btm .view-btn2 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -17336,7 +17349,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .single-category5 .category-content h5 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 600;
   transition: 0.35s;
@@ -17353,7 +17366,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .single-category5 .explore-btn5 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   display: inline-flex;
@@ -17465,7 +17478,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home5-why-drivco-area .drivco-content ul .single-feature .feature-content h5 {
   margin-bottom: 5px;
   color: #000;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 500;
 }
@@ -17687,7 +17700,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-st-card1 .product-img .product-price span {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
@@ -17768,7 +17781,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   line-height: 1;
 }
 .product-st-card1 .product-content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
@@ -17851,7 +17864,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   padding-top: 20px;
 }
 .product-st-card1 .product-content .content-btm .view-btn2 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -17931,7 +17944,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-st-card1.two .product-img .product-price span {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
@@ -17968,7 +17981,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   line-height: 1;
 }
 .product-st-card1.two .product-content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
@@ -18261,7 +18274,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home5-compare-car-section .compare-card5 .single-compare .content h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   transition: 0.35s;
@@ -18274,7 +18287,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home5-compare-car-section .compare-card5 .single-compare .content .price span {
   color: var(--black-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
@@ -18420,7 +18433,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home5-testimonial-section .feedback-card .author-name h6 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 17px;
@@ -18438,7 +18451,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   gap: 10px;
 }
 .home5-testimonial-section .trustpilot-review > strong {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -18482,7 +18495,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home6-banner-area .banner-content > span {
   color: var(--black-color2);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
@@ -18500,7 +18513,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   background-color: rgba(29, 29, 29, 0.15);
 }
 .home6-banner-area .banner-content h1 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -18623,7 +18636,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home6-banner-area .banner-img-group .top-img-group .top-left-card h4 {
   color: var(--black-color2);
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 22px;
   margin-bottom: 5px;
   font-weight: 600;
@@ -18690,7 +18703,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .home6-search-area form .form-inner label {
   color: var(--black-color2);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -18752,7 +18765,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   border: none;
   color: var(--text-color);
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   border-radius: 25px;
@@ -18803,7 +18816,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home6-brand-section .car-category .content h6 {
   color: var(--title-color);
   font-size: 14px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   margin-bottom: 2px;
   line-height: 20px;
@@ -18811,7 +18824,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home6-brand-section .car-category .content span {
   color: var(--text-color);
   font-size: 14px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   margin-bottom: 0;
   line-height: 20px;
@@ -18828,7 +18841,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .home6-brand-section .our-activetis .single-activiti .content .number {
   display: flex;
   align-items: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -18871,7 +18884,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .eg-table thead tr th {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   padding: 8px 20px;
@@ -18916,7 +18929,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .compare-modal .modal-header .modal-title {
   font-size: 22px;
   font-weight: 700;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
 }
 .compare-modal .modal-header .btn-close {
   padding: 0;
@@ -18961,7 +18974,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   margin-bottom: 5px;
 }
 .compare-modal .compare-top .single-car .content h6.title a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -18972,7 +18985,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   color: var(--primary-color1);
 }
 .compare-modal .compare-top .single-car .content h6.price {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 20px;
   line-height: 17px;
@@ -18990,7 +19003,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color1);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 12px;
   color: var(--black-color);
@@ -19151,7 +19164,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   fill: var(--primary-color1);
 }
 .inner-page-banner .banner-content h1 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 55px;
   color: var(--title-color);
@@ -19298,7 +19311,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .inner-page-banner .banner-content.style-2 .price-model-and-fav-area .price-and-model .price h3 {
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 30px;
   font-weight: 600;
 }
@@ -19437,7 +19450,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .inner-page-banner .banner-content.style-2 .location-and-notification ul li.alart {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   cursor: pointer;
 }
 .inner-page-banner .banner-content.style-2 .location-and-notification ul li.alart button {
@@ -19445,7 +19458,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   align-items: baseline;
   gap: 5px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -19488,7 +19501,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .welcome-banner-section .welcome-wrap .author-area h6 {
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
 }
@@ -19524,7 +19537,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 
 .view-more-btn .primary-btn3 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   padding: 10px 55px;
   color:var(--white-color);
 }
@@ -19593,7 +19606,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .car-details-area .car-details-menu .navbar .nav-pills .nav-item a {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   padding: 0;
@@ -19770,7 +19783,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 .car-details-area .car-img-area .tab-content .product-img2 .content h5 {
   color: #000;
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 0;
@@ -19832,7 +19845,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .car-details-area .title h5 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   position: relative;
@@ -19878,7 +19891,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   margin-bottom: 10px;
   line-height: 1;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -19996,7 +20009,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   }
 }
 .car-details-area .overview-content ul li span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   line-height: 1;
   font-weight: 600;
 }
@@ -20026,7 +20039,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .car-details-area .car-colors .car-color-wrap .content h6 {
   color: #000;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 0;
@@ -20065,7 +20078,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   margin-bottom: 0;
   line-height: 1;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 500;
 }
@@ -20139,7 +20152,7 @@ button {
 .faq-wrap .accordion .accordion-item .accordion-header .accordion-button {
   background: #FAF8FB;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   padding: 15px 55px 15px 25px;
@@ -20244,7 +20257,7 @@ button {
   line-height: 1;
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -20326,7 +20339,7 @@ button {
   background: #FAF8FB;
   color: var(--title-color);
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -20360,7 +20373,7 @@ button {
 }
 .car-details-sidebar .auction-info .bids-amount ul li strong {
   color: #13141A;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
 }
@@ -20390,7 +20403,7 @@ button {
 }
 .car-details-sidebar .contact-info .single-contact a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   border-radius: 5px;
@@ -20438,7 +20451,7 @@ button {
 .car-details-sidebar .inquiry-form .title h4 {
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
 }
@@ -20455,7 +20468,7 @@ button {
 }
 .car-details-sidebar .inquiry-form .form-inner label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: block;
@@ -20525,11 +20538,11 @@ button {
   background-color: rgba(70, 217, 147, 0.5);
 }
 .car-details-sidebar .inquiry-form .form-inner .iti__country-list li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 400;
 }
 .car-details-sidebar .inquiry-form .form-inner .iti__country-list li span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 400;
 }
 .car-details-sidebar .recent-car-area .nav-tabs {
@@ -20631,7 +20644,7 @@ button {
 }
 .product-details-page .product-details-content h4 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
@@ -20652,7 +20665,7 @@ button {
 }
 .product-details-page .product-details-content .price-tag h5 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0;
@@ -20708,7 +20721,7 @@ button {
   border: 1px solid rgba(19, 20, 26, 0.16);
   color: #13141A;
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
 }
@@ -20819,7 +20832,7 @@ button {
 }
 .product-details-page .nav2 .nav-link {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   padding: 0;
@@ -20892,7 +20905,7 @@ button {
   line-height: 1;
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
 }
@@ -20939,7 +20952,7 @@ button {
   line-height: 1;
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
 }
@@ -21036,7 +21049,7 @@ button {
 .product-details-page .tab-content2 .review-form .primary-btn3 {
   padding: 7px 25px;
   margin-top: 30px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
 }
 .product-details-page .addithonal-information .total-table2 {
   margin-bottom: 0;
@@ -21064,7 +21077,7 @@ button {
   font-weight: 600;
   font-size: 14px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   text-align: start;
   line-height: 26px;
 }
@@ -21079,7 +21092,7 @@ button {
 }
 .product-details-page .section-title h4 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 0;
@@ -21087,7 +21100,7 @@ button {
 }
 
 .product-search-area {
-  margin-top: -70px;
+  margin-top: 30px;
 }
 .product-search-area form {
   border-radius: 10px;
@@ -21111,7 +21124,7 @@ button {
 }
 .product-search-area form .form-inner label {
   color: var(--black-color2);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -21198,7 +21211,7 @@ button {
 }
 .product-sidebar .product-widget .check-box-item .product-widget-title {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
@@ -21369,7 +21382,7 @@ button {
   margin-bottom: 0;
   line-height: 1;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
 }
@@ -21379,7 +21392,7 @@ button {
 }
 .product-sidebar .product-widget .recent-product-list .recent-product .content > h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 13px;
   font-weight: 500;
   line-height: 20px;
@@ -21514,7 +21527,7 @@ button {
   margin-bottom: 0;
   line-height: 1;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 500;
 }
@@ -21545,7 +21558,7 @@ button {
   margin-bottom: 0;
   line-height: 1;
   color: #000;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
 }
@@ -21656,7 +21669,7 @@ button {
 }
 .pagination-and-next-prev .next-prev-btn ul li a {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   transition: 0.35s;
@@ -21746,7 +21759,7 @@ button {
 }
 .blog-standard-page .news-card2 .content h4 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 26px;
   font-weight: 600;
   line-height: 1.5;
@@ -21789,7 +21802,7 @@ button {
 }
 .blog-standard-page .news-card2 .content .news-btm .author-area .author-content h6 {
   margin-bottom: 3px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
@@ -21832,7 +21845,7 @@ button {
 }
 .blog-sidebar .single-widgets .widget-title h6 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0;
@@ -21931,7 +21944,7 @@ button {
 }
 .blog-sidebar .single-widgets .recent-post-wraper .widget-cnt .wc h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   line-height: 22px;
@@ -22017,7 +22030,7 @@ button {
 }
 .sidebar-banner .product-content .text h4 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
 }
@@ -22077,7 +22090,7 @@ button {
   line-height: 1;
   color: #13141A;
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 28px;
   font-weight: 700;
   display: inline-block;
@@ -22085,7 +22098,7 @@ button {
 .sidebar-banner .product-content .offer-batch span {
   color: var(--title-color);
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
 }
@@ -22175,7 +22188,7 @@ button {
 .blog-details-page .post-title {
   margin-bottom: 12px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 28px;
   font-weight: 600;
   line-height: 1.5;
@@ -22214,7 +22227,7 @@ button {
 }
 .blog-details-page .author-area .author-content h6 {
   margin-bottom: 3px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
@@ -22264,7 +22277,7 @@ button {
 }
 .blog-details-page blockquote p {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 500;
   line-height: 32px;
@@ -22272,7 +22285,7 @@ button {
 }
 .blog-details-page blockquote p span {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -22335,7 +22348,7 @@ button {
   line-height: 1;
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 600;
 }
@@ -22372,7 +22385,7 @@ button {
   line-height: 1;
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 600;
 }
@@ -22451,7 +22464,7 @@ button {
 }
 .blog-details-page .details-navigation .single-navigation .content > a {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   transition: 0.35s;
@@ -22466,7 +22479,7 @@ button {
 }
 .blog-details-page .details-navigation .single-navigation .content h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
@@ -22490,7 +22503,7 @@ button {
 .blog-details-page .inquiry-form .title h4 {
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
 }
@@ -22507,7 +22520,7 @@ button {
 }
 .blog-details-page .inquiry-form .form-inner label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: block;
@@ -22649,11 +22662,11 @@ button {
   background-color: rgba(70, 217, 147, 0.5);
 }
 .blog-details-page .inquiry-form .form-inner .iti__country-list li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 400;
 }
 .blog-details-page .inquiry-form .form-inner .iti__country-list li span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 400;
 }
 .blog-details-page .comment-title {
@@ -22664,7 +22677,7 @@ button {
 }
 .blog-details-page .comment-title h4 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0;
@@ -22758,7 +22771,7 @@ button {
 }
 .toprated-used-cars .title h4 {
   color: #000;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 0;
@@ -22931,7 +22944,7 @@ button {
   margin-bottom: 3px;
   color: var(--title-color);
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
 }
@@ -23005,7 +23018,7 @@ button {
 }
 .compare-page .car-details-menu .navbar .nav-pills .nav-item a {
   color: var(--text-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 600;
   padding: 0;
@@ -23066,7 +23079,7 @@ button {
 }
 .compare-page .single-compare .section-title h5 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0;
@@ -23097,7 +23110,7 @@ button {
 }
 .compare-page .car-colors .car-color-wrap .content h6 {
   color: #000;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 0;
@@ -23136,7 +23149,7 @@ button {
   margin-bottom: 0;
   line-height: 1;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 500;
 }
@@ -23369,7 +23382,7 @@ button {
 .checkout-page .inquiry-form .title h4 {
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 700;
 }
@@ -23386,7 +23399,7 @@ button {
 }
 .checkout-page .inquiry-form .form-inner label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: block;
@@ -23579,7 +23592,7 @@ button {
   margin-bottom: 10px;
 }
 .checkout-page .cart-body ul .single-item .item-area .main-item .content span {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 15px;
   color: var(--title-color);
@@ -23590,7 +23603,7 @@ button {
   line-height: 1;
 }
 .checkout-page .cart-body ul .single-item .item-area .main-item .content h6 a {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -23663,7 +23676,7 @@ button {
   margin-bottom: 30px;
 }
 .checkout-page .cart-footer .pricing-area ul li {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 600;
   font-size: 13px;
   color: var(--title-color);
@@ -23681,7 +23694,7 @@ button {
 .checkout-page .choose-payment-mathord h6 {
   margin-bottom: 10px;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
 }
@@ -23748,7 +23761,7 @@ button {
 }
 .faq-page-wrap .faq-area .section-title-and-filter .section-title h4 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 0;
@@ -23766,7 +23779,7 @@ button {
   margin-bottom: 0;
   line-height: 1;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 500;
 }
@@ -23806,7 +23819,7 @@ button {
 }
 .faq-inquiery-form .form-inner label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
@@ -23878,7 +23891,7 @@ button {
 }
 .faq-inquiery-form .select-category label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 600;
   line-height: 1;
@@ -23935,7 +23948,7 @@ button {
 }
 .contact-page .single-location .title-and-view-btn h5 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 0;
@@ -23943,7 +23956,7 @@ button {
 }
 .contact-page .single-location .title-and-view-btn a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 12px;
   font-weight: 600;
   transition: 0.35s;
@@ -24067,7 +24080,7 @@ button {
 }
 .contact-page .single-contact .content h6 a {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   transition: 0.35s;
@@ -24100,7 +24113,7 @@ button {
 }
 .contact-page .section-title h4 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 26px;
   font-weight: 700;
 }
@@ -24122,7 +24135,7 @@ button {
 .contact-page .inquiry-form .title h4 {
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 24px;
   font-weight: 700;
 }
@@ -24139,7 +24152,7 @@ button {
 }
 .contact-page .inquiry-form .form-inner label {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   display: block;
@@ -24288,7 +24301,7 @@ button {
 .error-page .error-wrapper .error-content-area h1 {
   color: #000;
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -24296,7 +24309,7 @@ button {
 .error-page .error-wrapper .error-content-area p {
   color: #000;
   text-align: center;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 35px;
@@ -24360,7 +24373,7 @@ button {
 }
 .customer-feedback-pages .feedback-card .author-name h6 {
   margin-bottom: 0;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -24401,7 +24414,7 @@ button {
 .return-and-exchange-pages .update-date h6 {
   margin-bottom: 0;
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
@@ -24429,7 +24442,7 @@ button {
 }
 .return-and-exchange-pages .return-and-exchange h4 {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -24466,7 +24479,7 @@ button {
 }
 .return-and-exchange-pages .return-and-exchange ul li strong {
   color: var(--title-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-gilroy);
   font-size: 16px;
   font-weight: 600;
   line-height: 30px;
@@ -24559,7 +24572,7 @@ button {
   gap: 50px;
   color: #FFF !important;
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: gilroy;
   font-weight: 600;
 }
 
@@ -24581,7 +24594,7 @@ button {
   color: var(--white-color);
   margin-bottom: -2px;
   padding: 10px 0px;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .find_car_head h1 {
@@ -24604,6 +24617,7 @@ button {
   left: 90px;
   padding: 10px;
   width: 100%;
+  border-radius:0 0 10px 10px;
 }
 
 .search_filter_box i {
@@ -25197,3 +25211,11 @@ button {
 }
 
 /* ads ends */
+
+
+/* popular brands begins*/
+.popularCarText{
+  font-size: 38;
+  font-weight: 800;
+}
+/* popular brands ends */

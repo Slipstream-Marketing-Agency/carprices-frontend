@@ -4,7 +4,7 @@ import SwiperCore, { Autoplay, EffectFade, Navigation, Pagination } from "swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 SwiperCore.use([Pagination, Autoplay, EffectFade, Navigation]);
-function index() {
+function index({heading,carDetails}) {
     const slideSettings = useMemo(()=>{
         return {
             slidesPerView: "auto",
@@ -54,7 +54,7 @@ function index() {
       <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
         <div className="col-lg-12">
           <div className="section-title1">
-            <span>Best Car Collection</span>
+            {/* <span>Best Car Collection</span> */}
             <h2>Compare Car With Brand</h2>
           </div>
         </div>
