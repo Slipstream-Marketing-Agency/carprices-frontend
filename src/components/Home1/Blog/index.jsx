@@ -4,14 +4,13 @@ import Link from 'next/link'
 function index({heading,btnTitle,blogData}) {
     
   return (
-    <div className="news-section pt-4  bgColor">
-        <div className="container containerBorder pb-3 whiteColorBg">
-            <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
+    <div className="news-section pb-90">
+        <div className="container  ">
+            <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
             <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
                 <div className="section-title1">
-                {/* <span>News &amp; Article</span> */}
-                {/* <h2>The Latest News Car &amp; Bids</h2> */}
-                <h2>{heading}</h2>
+                 <span>Best Trending</span> 
+                 <h2>Trending Cars News</h2> 
                 </div>
             </div>
             </div>
@@ -94,9 +93,24 @@ function index({heading,btnTitle,blogData}) {
                 </div>
             </div> */}
             </div>
-            <div class="view-btn-area mt-2">
-        <button type="button" class="primary-btn1 text-white d-flex align-items-center gap-0 " ><span className='btn-txt'>{btnTitle}</span>
-        </button>
+            <div class="view-btn-area mt-5">
+ {/* custom button begins */}
+<div class="buttons">
+  <button class="blob-btn">
+    {btnTitle}
+    <span class="blob-btn__inner">
+      <span class="blob-btn__blobs">
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+      </span>
+    </span>
+  </button>
+  <br/>
+
+</div>
+{/* custom button ends */}
         </div>
         </div>
         

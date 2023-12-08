@@ -52,7 +52,7 @@ function index() {
     })
   return (
     <div className="customar-feedback-area mb-100">
-      <div className="container containerBorder">
+      <div className="container ">
         <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
           <div className="col-lg-12">
             <div className="section-title1">

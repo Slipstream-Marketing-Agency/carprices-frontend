@@ -9,8 +9,8 @@ function index() {
         "Melbone City",
         "Rome City",]
   return (
-    <div className="top-rate-used-car-area pt-4  bgColor">
-      <div className='containerBorder pb-4 whiteColorBg'> 
+    <div className="top-rate-used-car-area pt-4  ">
+      <div className=' pb-4 '> 
         <div className="container">
           <div className="row mt-3 mb-30 wow fadeInUp" data-wow-delay="200ms">
             <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">

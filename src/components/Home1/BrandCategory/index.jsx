@@ -4,8 +4,16 @@ import { BrandCategoryHome1 } from "../../../data/data";
 
 function index() {
   return (
-    <div className="brand-category-area pt-100 mb-100">
+    <div className="brand-category-area  pt-4 mb-100">
       <div className="container">
+      <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
+            <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
+                <div className="section-title1">
+                 <span>Available Brand Car</span>
+                <h2>Popular Brands</h2>
+                </div>
+            </div>
+            </div>
         <div className="row row-cols-xl-6 row-cols-lg-5 row-cols-md-3 row-cols-sm-3 row-cols-2 g-4 justify-content-center mb-40">
           {BrandCategoryHome1.map((item) => {
             const { id, image, icons } = item;

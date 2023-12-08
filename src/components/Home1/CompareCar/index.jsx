@@ -49,13 +49,13 @@ function index({ heading, carDetails }) {
     }
   })
   return (
-    <div className="compare-car-section  bgColor">
-      <div className="container-xl pb-4 container-fluid containerBorder whiteColorBg">
-        <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
+    <div className="compare-car-section mt-5 mb-100">
+      <div className="container-xl pb-4 container-fluid ">
+        <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
           <div className="col-lg-12">
             <div className="section-title1">
-              {/* <span>Best Car Collection</span> */}
-              <h2>Compare New Cars</h2>
+              <span>Best Car Collection</span>
+              <h2>Compare Car With Brand</h2>
             </div>
           </div>
         </div>
@@ -285,8 +285,34 @@ function index({ heading, carDetails }) {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
               </div>
               <div class="view-btn-area ">
-                <button type="button" class="primary-btn1 text-white d-flex align-items-center gap-0 " ><span className="btn-txt">Compare More Cars</span>
-                </button>
+                 
+              <p>There are Trending Car Available</p>
+<button class="button-89" role="button">View More</button>
+{/* custom button begins */}
+{/* <div class="buttons">
+  <button class="blob-btn">
+    View More
+    <span class="blob-btn__inner">
+      <span class="blob-btn__blobs">
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+      </span>
+    </span>
+  </button>
+  <br/>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+    </filter>
+  </defs>
+</svg>
+</div> */}
+{/* custom button ends */}
               </div>
               <div className="slider-btn next-3 d-md-flex d-none pb-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>

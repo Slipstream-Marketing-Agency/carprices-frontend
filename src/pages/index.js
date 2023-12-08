@@ -8,7 +8,7 @@ import ShopCard from "../components/Home1/ShopCard/index";
 import CompareCar from "../components/Home1/CompareCar/index";
 import Testimonial from "../components/Home1/Teatimonial/index";
 import Modals from "../components/Home1/Modals";
-import CarouselCardWithButton from "../components/Home1/FeaturedNewCars/index";
+import FeaturedNewCars from "../components/Home1/FeaturedNewCars/index";
 import MostPopularNewCars from "../components/Home1/MostPopularNewCars/index";
 import NewPopularBrands from '../components/NewPopularBrands/index';
 import WhyChoose from "../components/Home1/WhyChoose/index";
@@ -159,16 +159,16 @@ export default function Home() {
       <Header />
       <Banner />
       <QuickLinkArea />
-      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
-      {/* <BrandCategory /> */}
-      <MostPopularNewCars heading={"Most Popular New Cars"} carDetails={carDetails}/>
-      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
-      <MostPopularNewCars heading={"Featured New Cars"} carDetails={carDetails} />
-      <NewPopularBrands brandsData={brands}  />
+      <Ad728x90 dataAdSlot="5962627056" />
+      <BrandCategory />
+      <MostPopularNewCars subTitle={"Most Popular"} heading={"Most Popular New Cars"} carDetails={carDetails}/>
+      <Ad728x90 dataAdSlot="5962627056" />
+      <FeaturedNewCars subTitle={"Newly Featured"}  heading={"Featured New Cars"} carDetails={carDetails} />
+      {/* <NewPopularBrands brandsData={brands}  /> */}
       {/* <UpcomingCars /> */}
       {/* <RecomandationCar /> */}
       {/* <TopRateUsedCars /> */}
-      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
+      <Ad728x90 dataAdSlot="5962627056" />
       <CompareCar />
       {/* <WhyChoose /> */}
       {/* <ShopCard /> */}
@@ -177,7 +177,7 @@ export default function Home() {
 
       <Blog heading={"Trending Car News"} btnTitle={"View All Latest News"} blogData={blogData}/>
       <Blog heading={"New Car Reviews"} btnTitle={"View All Reviews"} blogData={blogData}/>
-      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
+      <Ad728x90 dataAdSlot="5962627056" />
       
       <Footer1 />
       <GoToTopButton />

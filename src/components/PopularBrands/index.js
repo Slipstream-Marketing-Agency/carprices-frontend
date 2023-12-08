@@ -8,8 +8,8 @@ import Link from "next/link";
 export default function PopularBrands(props) {
 
   return (
-    <div className="pt-4 bgColor">
-      <div className="container containerBorder whiteColorBg">
+    <div className="pt-4 ">
+      <div className="container ">
         <section className="my-2 ">
           <div className="card_wrapper ">
             <h2 className="popularCarText">Popular Car Brands</h2>

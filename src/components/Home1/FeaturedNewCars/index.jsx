@@ -52,13 +52,12 @@ function index({heading,carDetails}) {
     }
   }, [])
   return (
-    <div className="most-search-area  pb-40 bgColor">
-      <div className="containerBorder pb-4 whiteColorBg">
+    <div className="most-search-area pt-5 pb-4 mb-100">
         <div className="container ">
-          <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
+          <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
             <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
               <div className="section-title1">
-                {/* <span>Available Brand Car</span> */}
+                <span>Best Featured</span>
                 <h2>{heading}</h2>
               </div>
               <ul className="nav nav-tabs" id="myTab5" role="tablist">
@@ -2688,12 +2687,13 @@ function index({heading,carDetails}) {
                     <p>Availabe 50+ Car</p>
                     <Link legacyBehavior href="/single-brand-category"><a className="view-btn">View All BMW</a></Link>
                   </div>
-                </div> */}
+                </div> 
+                */}
               </div>
             </div>
           </div>
         </div>
-      </div>
+
     </div>
   )
 }

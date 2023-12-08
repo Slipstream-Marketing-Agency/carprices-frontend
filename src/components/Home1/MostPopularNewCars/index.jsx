@@ -2,16 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import { useCountdownTimer } from '../../hooks/useCountdownTimer'
 
-function index({heading,carDetails}) {
+function index({subTitle,heading,carDetails}) {
   const endTime = "2023-10-23";
   const { days, hours, minutes, seconds } = useCountdownTimer(endTime)
   return (
-    <div className="recent-product-section bgColor">
-      <div className="container containerBorder pb-4 whiteColorBg">
-        <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
+    <div className="recent-product-section mb-100">
+      <div className="container">
+        <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
           <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
             <div className="section-title1">
-              {/* <span>Recent Launched </span> */}
+              <span>{subTitle}</span>
               <h2>{heading}</h2>
             </div>
             <ul className="nav nav-tabs" id="myTab6" role="tablist">
@@ -59,13 +59,15 @@ function index({heading,carDetails}) {
                           <div className="price">
                             <strong>{car.carPrice}</strong>
                           </div>
-                          {/* <div className="location">
+                          <div className="location">
                             <a href="#"><i className="bi bi-geo-alt" /> Panama City</a>
-                          </div> */}
+                          </div>
                         </div>
+                     
                         <ul className="features">
-                          <li>EMI Starting From {car.emiStartingFrom}</li>
-                          {/* <li>
+                        <li>EMI Starting From {car.emiStartingFrom}</li>
+                        <li></li>
+                          <li>
                             <svg width={13} height={13} viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                               <mask id="mask0_611_76" style={{maskType: 'alpha'}} maskUnits="userSpaceOnUse" x={0} y={0} width={13} height={13}>
                                 <rect width={13} height={13} />
@@ -103,11 +105,11 @@ function index({heading,carDetails}) {
                               </g>
                             </svg>
                             Electric
-                          </li> */}
+                          </li>
                         </ul>
                         
                         {/* d-flexed to view details at center  */}
-                        <div className="content-btm d-flex justify-content-center">
+                        <div className="content-btm ">
                           <Link legacyBehavior href="/car-deatils">
                             <a className="view-btn2">
                             <svg width={35} height={21} viewBox="0 0 35 21" xmlns="http://www.w3.org/2000/svg">
@@ -119,18 +121,22 @@ function index({heading,carDetails}) {
                             View Details
                             </a>
                           </Link>
-                          {/* <div className="brand">
+                          <div className="brand">
                             <Link legacyBehavior href="/single-brand-category">
                                 <a>
                               <img src="assets/img/home1/icon/mercedes-01.svg" alt="image" />
                                 </a>
                             </Link>
-                          </div> */}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   )) }
+                   <div className="view-btn-area">
+                <p>There will be 100+ Upcoming Car</p>
+                <Link legacyBehavior href="/single-brand-category"><a className="view-btn">View More</a></Link>
+                </div>
                   {/* <div className="col-lg-4 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="300ms">
                     <div className="product-card">
                       <div className="product-img">

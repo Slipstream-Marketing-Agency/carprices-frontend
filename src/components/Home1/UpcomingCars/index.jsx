@@ -100,10 +100,10 @@ function index() {
         </div>
         </div>
         <div className="container">
-        <div className="row mb-4 wow fadeInUp" data-wow-delay="200ms">
+        <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
             <div className="col-lg-12">
             <div className="section-title1">
-                {/* <span>On The Way</span> */}
+                <span>On The Way</span>
                 <h2>Upcoming Cars</h2>
             </div>
             </div>

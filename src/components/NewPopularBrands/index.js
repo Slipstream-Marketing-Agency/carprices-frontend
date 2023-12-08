@@ -53,8 +53,8 @@ function index({ heading, brandsData }) {
         }
     }, [])
     return (
-        <div className="most-search-area pt-4 pb-40 bgColor">
-            <div className="containerBorder pb-4 whiteColorBg">
+        <div className="most-search-area pt-4 pb-40 ">
+            <div className=" pb-4 ">
                 <div className="container ">
                     <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
                         <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
