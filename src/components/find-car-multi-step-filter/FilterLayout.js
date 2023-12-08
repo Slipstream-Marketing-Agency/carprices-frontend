@@ -221,7 +221,7 @@ export default function FilterLayout() {
                 </>
               )}
               <p>
-                <b>{steps[currentStep].title}</b>
+                <b className="filterStepTxt">{steps[currentStep].title}</b>
               </p>
               {steps[currentStep].component}
               <div className="">

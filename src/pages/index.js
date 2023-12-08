@@ -8,9 +8,9 @@ import ShopCard from "../components/Home1/ShopCard/index";
 import CompareCar from "../components/Home1/CompareCar/index";
 import Testimonial from "../components/Home1/Teatimonial/index";
 import Modals from "../components/Home1/Modals";
-import CarouselCardWithButton from "../components/Home1/CarouselCardWithButton/index";
-import MultipleRowCards from "../components/Home1/MultipleRowCards/index";
-
+import CarouselCardWithButton from "../components/Home1/FeaturedNewCars/index";
+import MostPopularNewCars from "../components/Home1/MostPopularNewCars/index";
+import NewPopularBrands from '../components/NewPopularBrands/index';
 import WhyChoose from "../components/Home1/WhyChoose/index";
 import UpcomingCars from "../components/Home1/UpcomingCars/index";
 import RecomandationCar from "../components/Home1/RecommendedCar/index";
@@ -18,6 +18,7 @@ import TopRateUsedCars from "../components/Home1/TopRateUsedCars/index";
 import Blog from "../components/Home1/Blog/index";
 import Ad728x90 from "../components/ads/Ad728x90";
 import PopularBrands from "../components/PopularBrands";
+import GoToTopButton from "../components/goToTop";
 export default function Home() {
   const carDetails = [
     {
@@ -150,6 +151,7 @@ export default function Home() {
     date:"03 Aug, 2023"
     }
 ]
+
   return (
     <>
       <Modals />
@@ -157,26 +159,28 @@ export default function Home() {
       <Header />
       <Banner />
       <QuickLinkArea />
-      <Ad728x90 dataAdSlot="5962627056" />
+      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
       {/* <BrandCategory /> */}
-      <MultipleRowCards heading={"Most Popular New Cars"} carDetails={carDetails}/>
-      <Ad728x90 dataAdSlot="5962627056" />
-      <CarouselCardWithButton heading={"Featured New Cars"} carDetails={carDetails} />
-      <Ad728x90 dataAdSlot="5962627056" />
-      <PopularBrands brands={brands} />
+      <MostPopularNewCars heading={"Most Popular New Cars"} carDetails={carDetails}/>
+      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
+      <MostPopularNewCars heading={"Featured New Cars"} carDetails={carDetails} />
+      <NewPopularBrands brandsData={brands}  />
       {/* <UpcomingCars /> */}
       {/* <RecomandationCar /> */}
-      <TopRateUsedCars />
+      {/* <TopRateUsedCars /> */}
+      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
       <CompareCar />
-      <WhyChoose />
-   
+      {/* <WhyChoose /> */}
       {/* <ShopCard /> */}
-      <Testimonial />
-      <Ad728x90 dataAdSlot="5962627056" />
+      {/* <Testimonial /> */}
+   
 
       <Blog heading={"Trending Car News"} btnTitle={"View All Latest News"} blogData={blogData}/>
       <Blog heading={"New Car Reviews"} btnTitle={"View All Reviews"} blogData={blogData}/>
+      <div className="w-100 bgColor"><Ad728x90 dataAdSlot="5962627056" /></div>
+      
       <Footer1 />
+      <GoToTopButton />
     </>
   );
 }

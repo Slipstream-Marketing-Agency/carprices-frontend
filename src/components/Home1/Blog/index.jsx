@@ -4,9 +4,9 @@ import Link from 'next/link'
 function index({heading,btnTitle,blogData}) {
     
   return (
-    <div className="news-section pt-5 pb-90">
-        <div className="container">
-            <div className="row mb-4 wow fadeInUp" data-wow-delay="200ms">
+    <div className="news-section pt-4  bgColor">
+        <div className="container containerBorder pb-3 whiteColorBg">
+            <div className="row mt-4 mb-30 wow fadeInUp" data-wow-delay="200ms">
             <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
                 <div className="section-title1">
                 {/* <span>News &amp; Article</span> */}
@@ -94,12 +94,12 @@ function index({heading,btnTitle,blogData}) {
                 </div>
             </div> */}
             </div>
-        </div>
-        <div class="view-btn-area mt-2">
-
-        <button type="button" class="primary-btn1 text-white d-flex align-items-center gap-0 " ><span>{btnTitle}</span>
+            <div class="view-btn-area mt-2">
+        <button type="button" class="primary-btn1 text-white d-flex align-items-center gap-0 " ><span className='btn-txt'>{btnTitle}</span>
         </button>
         </div>
+        </div>
+        
   
     </div>
   )

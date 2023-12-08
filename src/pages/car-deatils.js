@@ -1462,7 +1462,7 @@ function CarDeatilsPage() {
           </div>
         </div>
       </div>
-      <div className="most-search-area style-2 pt-90 pb-90 mb-100">
+      <div className="most-search-area style-2 pb-90 mb-100">
         <div className="container">
           <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
             <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">

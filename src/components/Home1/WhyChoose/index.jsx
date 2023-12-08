@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 function index() {
   return (
     <div className="why-choose-area pt-5 pb-4">
-      <div className="container">
+      <div className="container containerBorder">
         <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
           <div className="col-lg-12 d-flex justify-content-center">
             <div className="section-title1 text-center">

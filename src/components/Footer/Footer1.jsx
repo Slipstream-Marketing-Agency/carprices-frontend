@@ -190,14 +190,14 @@ function Footer1() {
             </div> */}
           </div>
         </div>
-        <div className="footer-center">
+        {/* <div className="footer-center">
           <div className="footer-logo">
             <Link legacyBehavior href="/">
               <a>
               <img src="assets/img/footer-logo.svg" alt="" />
               </a>
             </Link>
-          </div>
+          </div> */}
           {/* <div className="contact-area">
             <div className="hotline-area">
               <div className="icon">
@@ -252,11 +252,11 @@ function Footer1() {
               </li>
             </ul>
           </div> */}
-        </div>
+        {/* </div> */}
         <div className="footer-btm">
           <div className="copyright-area">
             <p>
-              Copyright 2023 <a href="#">CAR PRICES</a> 
+             © 2023 Slipstream Marketing L.L.C
             </p>
           </div>
           <div className="social-area">

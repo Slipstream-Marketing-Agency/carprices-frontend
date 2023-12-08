@@ -17,7 +17,7 @@ const Ad728x90 = (props) => {
 
 
   return (
-    <div className="Ad728x90">
+    <div className="Ad728x90 bgColor">
       {shouldDisplayAds && (
         <ins
           className="adsbygoogle responsive_leaderboard_horizontal "
