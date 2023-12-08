@@ -7,7 +7,7 @@ SwiperCore.use([ Autoplay, EffectFade, Navigation]);
 function index() {
     const slideSetting = useMemo(()=>{
         return {
-            slidesPerView: 3,
+            slidesPerView: 4,
             speed: 1500,
             spaceBetween: 25,
             // autoplay: {
@@ -35,15 +35,15 @@ function index() {
                     spaceBetween: 15,
                 },
                 992: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 15,
                 },
                 1200: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 24,
                 },
                 1400: {
-                    slidesPerView: 3
+                    slidesPerView: 4
                 },
             }
         }
@@ -100,10 +100,10 @@ function index() {
         </div>
         </div>
         <div className="container">
-        <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
+        <div className="row mb-4 wow fadeInUp" data-wow-delay="200ms">
             <div className="col-lg-12">
             <div className="section-title1">
-                <span>On The Way</span>
+                {/* <span>On The Way</span> */}
                 <h2>Upcoming Cars</h2>
             </div>
             </div>

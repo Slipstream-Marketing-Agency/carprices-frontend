@@ -10,7 +10,7 @@ function Header1() {
       <div className="main-menu">
         <div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
           <div className="mobile-logo-wrap">
-            <Link legacyBehavior href=""><a><img alt="image" src="/assets/img/car-prices-logo.png" /></a></Link>
+            <Link legacyBehavior href=""><a><img className='carPricesIcon' alt="image" src="/assets/img/car-prices-logo.png" /></a></Link>
           </div>
         </div>
         <ul className="menu-list">

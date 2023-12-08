@@ -9,12 +9,12 @@ function index() {
         "Melbone City",
         "Rome City",]
   return (
-    <div className="top-rate-used-car-area pt-90 pb-90 mb-100">
+    <div className="top-rate-used-car-area pt-5 pb-4 mb-4">
       <div className="container">
-        <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
+        <div className="row mb-4 wow fadeInUp" data-wow-delay="200ms">
           <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
             <div className="section-title1">
-              <span>Used Car</span>
+              {/* <span>Used Car</span> */}
               <h2>Top Rate Used Cars</h2>
             </div>
             <div className="form-inner">

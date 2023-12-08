@@ -52,9 +52,9 @@ function index({heading,carDetails}) {
     }
   }, [])
   return (
-    <div className="most-search-area pt-90 pb-90 mb-20">
+    <div className="most-search-area pt-40 pb-40 mb-20">
       <div className="container">
-        <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
+        <div className="row mb-4 wow fadeInUp" data-wow-delay="200ms">
           <div className="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
             <div className="section-title1">
               {/* <span>Available Brand Car</span> */}
@@ -94,7 +94,7 @@ function index({heading,carDetails}) {
             <div className="tab-content" id="myTabContent5">
              
               <div className="tab-pane fade show active" id="sedan" role="tabpanel" aria-labelledby="sedan-tab">
-                <Swiper {...slideSetting} className="swiper most-search-slider mb-50">
+                <Swiper {...slideSetting} className="swiper most-search-slider mb-4">
                   <div className="swiper-wrapper">
                     {carDetails?.map((car,index)=>(
                         <SwiperSlide className="swiper-slide">

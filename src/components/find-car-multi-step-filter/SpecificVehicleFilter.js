@@ -4,7 +4,8 @@ import _ from "lodash";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
-import FeaturedImage from "../common/FeaturedImage";
+import FeaturedImage from "../featuredImage";
+
 
 export default function SpecificVehicleFilter({
   specificVehicleFilter,

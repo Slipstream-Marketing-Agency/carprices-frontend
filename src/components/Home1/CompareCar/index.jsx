@@ -49,13 +49,13 @@ function index({heading,carDetails}) {
         }
     })
   return (
-    <div className="compare-car-section mb-100">
+    <div className="compare-car-section mb-3  ">
     <div className="container-xl container-fluid">
-      <div className="row mb-60 wow fadeInUp" data-wow-delay="200ms">
+      <div className="row mb-4 wow fadeInUp" data-wow-delay="200ms">
         <div className="col-lg-12">
           <div className="section-title1">
             {/* <span>Best Car Collection</span> */}
-            <h2>Compare Car With Brand</h2>
+            <h2>Compare New Cars</h2>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@ function index({heading,carDetails}) {
                         <img src="assets/img/home1/compare-md-01.png" alt="car" />
                       </div>
                       <div className="content text-center">
-                        <span>(SUV)</span>
+                        <span>SUV</span>
                         <h6 className="title"><a href="#">Kia Optima</a></h6>
                         <h6 className="price">$68, 219.000</h6>
                       </div>

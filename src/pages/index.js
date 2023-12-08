@@ -132,6 +132,24 @@ export default function Home() {
       slug:"test"
     },
   ]
+
+  const blogData=[
+    {tag:"Buying Advice",
+    title:"The Car Enthusiast: Exploring the World of Cars and Driving.",
+    author:"Mr. Morris Mannu",
+    date:"03 April, 2023"
+    },
+    {tag:"Car Advice",
+    title:"The Best Car Brands for Performance and Reliability.",
+    author:"Mr. sahin",
+    date:"03 May, 2023"
+    },
+    {tag:"Driving Advice",
+    title:"The Environmental Impact of Cars and How to Minimize It.",
+    author:"Mr. sahin",
+    date:"03 Aug, 2023"
+    }
+]
   return (
     <>
       <Modals />
@@ -143,19 +161,21 @@ export default function Home() {
       {/* <BrandCategory /> */}
       <MultipleRowCards heading={"Most Popular New Cars"} carDetails={carDetails}/>
       <Ad728x90 dataAdSlot="5962627056" />
-      <CarouselCardWithButton heading={"Top Searched Cars"} carDetails={carDetails} />
+      <CarouselCardWithButton heading={"Featured New Cars"} carDetails={carDetails} />
       <Ad728x90 dataAdSlot="5962627056" />
-      <WhyChoose />
       <PopularBrands brands={brands} />
-      <UpcomingCars />
-      <RecomandationCar />
+      {/* <UpcomingCars /> */}
+      {/* <RecomandationCar /> */}
       <TopRateUsedCars />
       <CompareCar />
-      <ShopCard />
+      <WhyChoose />
+   
+      {/* <ShopCard /> */}
       <Testimonial />
       <Ad728x90 dataAdSlot="5962627056" />
 
-      <Blog />
+      <Blog heading={"Trending Car News"} btnTitle={"View All Latest News"} blogData={blogData}/>
+      <Blog heading={"New Car Reviews"} btnTitle={"View All Reviews"} blogData={blogData}/>
       <Footer1 />
     </>
   );

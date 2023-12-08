@@ -2128,7 +2128,8 @@ header.style-1.sticky {
 header.style-1 .header-logo {
   padding: 15px 0;
 }
-@media (max-width: 576px) {
+
+@media (max-width: 976px) {
   header.style-1 .header-logo img {
     max-width: 165px;
     width: 100%;
@@ -10096,7 +10097,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 
 .banner-section1 {
   /* background-image: url(../img/home1/bannar1-bg.png), linear-gradient(#FAFAFA, #FAFAFA); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(../img/carbackgroundImage.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(../img/carbackgroundImageCopy.jpg);
     
 
   /* background: rgb(255,255,255); */
@@ -10118,18 +10119,18 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .transCar{
   position:absolute;
-  top:-20px;
+  top:-24px;
   left:-500px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   animation: carMove 2s ease  ;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 
 }
 @keyframes carMove{
   to{
-    left:70px;
+    left:180px;
   }
 }
 
@@ -10292,10 +10293,19 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-top:35px;
   border-radius: 5px;
 }
+
 @media (max-width: 1199px) {
   .banner-section1 .car-filter-area {
     max-width: 450px;
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section1 .car-filter-area {
+    margin-top:0px;
+  }
+  .carContainer{
+    padding-bottom: 0px;
   }
 }
 .banner-section1 .car-filter-area h4 {
@@ -10883,6 +10893,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   border: 1px solid #EEEEEE;
   transition: 0.35s;
   position: relative;
+  margin-bottom: 7px;
 }
 .product-card .new {
   font-family: var(--font-open-sans);
@@ -11318,7 +11329,8 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   background: #FAF8FB;
 }
 .product-card:hover {
-  border-color: var(--primary-color1);
+  /* border-color: var(--primary-color1); */
+  box-shadow:2px 2px 3px black;
 }
 .product-card:hover .product-img .number-of-img {
   opacity: 1;
@@ -11413,7 +11425,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   background-size: cover;
 }
 .why-choose-area .choose-card {
-  background: linear-gradient(116.81deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%) padding-box, linear-gradient(-90deg, rgba(204, 244, 224, 0.1), rgba(70, 217, 147, 0.4)) border-box;
+  /* background: linear-gradient(116.81deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%) padding-box, linear-gradient(-90deg, rgba(204, 244, 224, 0.1), rgba(70, 217, 147, 0.4)) border-box; */
   border: 1px solid transparent;
   background-origin: padding-box, border-box;
   background-repeat: no-repeat;
@@ -11436,7 +11448,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   width: 100%;
   border-radius: 5px;
   height: 100%;
-  background: linear-gradient(116.81deg, #fff 100%, white 100%) padding-box, linear-gradient(-90deg, #46d993, #46d993) border-box;
+  background: linear-gradient(116.81deg, #fff 100%, white 100%) padding-box, linear-gradient(-90deg, #4657d9, #7546d9) border-box;
   border: 1px solid transparent;
   background-origin: padding-box, border-box;
   background-repeat: no-repeat;
@@ -13189,19 +13201,19 @@ header.style-6 .main-menu .hotline-area .content h6 a {
      16. Footer Section
 ========================================*/
 footer {
-  background: var(--title-color);
+  background: var(--white-color);
 }
 footer .footer-top {
-  padding: 90px 11%;
+  padding: 0px 11%;
 }
 @media (max-width: 1699px) {
   footer .footer-top {
-    padding: 90px 6%;
+    padding: 0px 6%;
   }
 }
 @media (max-width: 1399px) {
   footer .footer-top {
-    padding: 90px 5%;
+    padding: 0px 5%;
   }
 }
 @media (max-width: 1399px) {
@@ -13219,7 +13231,7 @@ footer .footer-widget .widget-title {
 }
 footer .footer-widget .widget-title h5 {
   margin-bottom: 0;
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 20px;
   font-family: var(--font-gilroy);
   font-weight: 600;
@@ -13236,10 +13248,10 @@ footer .footer-widget .menu-container ul li:last-child {
   margin-bottom: 0;
 }
 footer .footer-widget .menu-container ul li a {
-  color: #B3B3B3;
+  color: rgba(36,39,44,.5);
   font-size: 15px;
   font-family: var(--font-open-sans);
-  font-weight: 600;
+  font-weight: 500;
   transition: 0.35s;
   display: flex;
   align-items: center;
@@ -13251,10 +13263,10 @@ footer .footer-widget .menu-container ul li a svg {
   opacity: 0;
 }
 footer .footer-widget .menu-container ul li a:hover {
-  color: var(--white-color);
+  color: rgba(67, 91, 140, 0.5);
 }
 footer .footer-widget .menu-container ul li a:hover svg {
-  fill: var(--primary-color1);
+  fill: rgba(67, 91, 140, 0.5);
   opacity: 1;
 }
 footer .footer-widget .app-download {
@@ -13434,7 +13446,7 @@ footer .footer-btm {
 }
 footer .footer-btm .copyright-area p {
   margin-bottom: 0;
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 14px;
   font-weight: 400;
   font-family: var(--font-open-sans);
@@ -24594,7 +24606,7 @@ button {
   color: var(--white-color);
   margin-bottom: -2px;
   padding: 10px 0px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 40px 40px;
 }
 
 .find_car_head h1 {
@@ -24604,7 +24616,11 @@ button {
 }
 
 .search_filter_box {
-  
+  border-radius: 10px;
+  background:var(--white-color);
+  border: radius 10px;
+  box-shadow: 0px 0 5px black;
+
   /* width: 360px;
   z-index: 100;
   padding: 10px; */
@@ -24655,7 +24671,7 @@ button {
 }
 
 .search_filter_box {
-  border-radius: 0px 0px 2px 2px;
+  border-radius: 10px 10px 2px 2px;
   box-shadow: 0 0 38px 0 rgba(36, 39, 44, 0.3);
   transition: all 1s ease-in;
 
@@ -24897,6 +24913,7 @@ button {
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(36, 39, 44, 0.15);
   padding: 10px;
+  margin-bottom:20px;
 }
 
 .card_wrapper_bottom_link {
