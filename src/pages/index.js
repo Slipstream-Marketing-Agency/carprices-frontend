@@ -23,9 +23,8 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import axios from "axios";
 import ProductCard from "../components/Home1/ProductCard";
 
-export default function Home({ homeData, error, errorMessage,popularcars }) {
-
-  console.log(popularcars,"datadatadatadata");
+export default function Home({ homeData, error, errorMessage, popularcars }) {
+  console.log(popularcars, "datadatadatadata");
   if (error) {
     return <div>Error: {errorMessage}</div>;
   }
@@ -220,8 +219,6 @@ export default function Home({ homeData, error, errorMessage,popularcars }) {
   );
 }
 
-
-
 export async function getServerSideProps() {
   const client = new ApolloClient({
     uri: process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT,
@@ -243,6 +240,47 @@ export async function getServerSideProps() {
                     attributes {
                       name
                       year
+                      metaTitle
+                      slug
+                      description
+                      car_brands {
+                        data {
+                          id
+                          attributes {
+                            name
+                            slug
+                          }
+                        }
+                      }
+                      year
+                      isFeatured
+                      isElectric
+                      featuredImage {
+                        data {
+                          id
+                          attributes {
+                            name
+                            url
+                          }
+                        }
+                      }
+                      car_trims {
+                        data {
+                          id
+                          attributes {
+                            name
+                            featuredImage {
+                              data {
+                                id
+                                attributes {
+                                  name
+                                  url
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -257,12 +295,12 @@ export async function getServerSideProps() {
       `${process.env.NEXT_PUBLIC_API_URL}pages/1?populate[0]=Sections,Sections.image`
     );
 
-    console.log(data,"datadatadata");
+    console.log(data, "datadatadata");
 
     return {
       props: {
         homeData: axiosResponse?.data?.data?.attributes?.Sections[0],
-        popularcars: data?.carSections?.data[0]?.attributes?.car_models?.data
+        popularcars: data?.carSections?.data[0]?.attributes?.car_models?.data,
       },
     };
   } catch (error) {
