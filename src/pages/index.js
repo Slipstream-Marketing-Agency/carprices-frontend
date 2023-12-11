@@ -10,7 +10,7 @@ import Testimonial from "../components/Home1/Teatimonial/index";
 import Modals from "../components/Home1/Modals";
 import FeaturedNewCars from "../components/Home1/FeaturedNewCars/index";
 import MostPopularNewCars from "../components/Home1/MostPopularNewCars/index";
-import NewPopularBrands from '../components/NewPopularBrands/index';
+import NewPopularBrands from "../components/NewPopularBrands/index";
 import WhyChoose from "../components/Home1/WhyChoose/index";
 import UpcomingCars from "../components/Home1/UpcomingCars/index";
 import RecomandationCar from "../components/Home1/RecommendedCar/index";
@@ -19,151 +19,173 @@ import Blog from "../components/Home1/Blog/index";
 import Ad728x90 from "../components/ads/Ad728x90";
 import PopularBrands from "../components/PopularBrands";
 import GoToTopButton from "../components/goToTop";
-export default function Home() {
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import axios from "axios";
+import ProductCard from "../components/Home1/ProductCard";
+
+
+export default function Home({ homeData }) {
   const carDetails = [
     {
       carName: "Example Car 1",
       carPrice: "AED 30,000",
       emiStartingFrom: "AED 500",
-      carImage: "example_car_1.jpg"
+      carImage: "example_car_1.jpg",
     },
     {
       carName: "Example Car 2",
       carPrice: "AED 25,000",
       emiStartingFrom: "AED 400",
-      carImage: "example_car_2.jpg"
+      carImage: "example_car_2.jpg",
     },
     {
       carName: "Example Car 3",
       carPrice: "AED 35,000",
       emiStartingFrom: "AED 306,500* - 398,500*",
-      carImage: "example_car_3.jpg"
+      carImage: "example_car_3.jpg",
     },
     {
       carName: "Example Car 4",
       carPrice: "AED 30,000",
       emiStartingFrom: "AED 206,500* - 398,500*",
-      carImage: "example_car_1.jpg"
+      carImage: "example_car_1.jpg",
     },
     {
       carName: "Example Car 5",
       carPrice: "AED 25,000",
       emiStartingFrom: "AED 106,500* - 398,500*",
-      carImage: "example_car_2.jpg"
+      carImage: "example_car_2.jpg",
     },
     {
       carName: "Example Car 6",
       carPrice: "AED 35,000",
       emiStartingFrom: "AED 600",
-      carImage: "example_car_3.jpg"
+      carImage: "example_car_3.jpg",
     },
     {
       carName: "Example Car 7",
       carPrice: "AED 30,000",
       emiStartingFrom: "AED 500",
-      carImage: "example_car_1.jpg"
+      carImage: "example_car_1.jpg",
     },
     {
       carName: "Example Car 8",
       carPrice: "AED 25,000",
       emiStartingFrom: "AED 400",
-      carImage: "example_car_2.jpg"
+      carImage: "example_car_2.jpg",
     },
-    
   ];
-  const brands=[
+  const brands = [
     {
-      name:"benz",
-      image:"image",
-      slug:"test"
+      name: "benz",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"BMW",
-      image:"image",
-      slug:"test"
+      name: "BMW",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"LEXUS",
-      image:"image",
-      slug:"test"
+      name: "LEXUS",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"brand4",
-      image:"image",
-      slug:"test"
+      name: "brand4",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand5",
-      image:"image",
-      slug:"test"
+      name: "Brand5",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand6",
-      image:"image",
-      slug:"test"
+      name: "Brand6",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand7",
-      image:"image",
-      slug:"test"
+      name: "Brand7",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand7",
-      image:"image",
-      slug:"test"
+      name: "Brand7",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand8",
-      image:"image",
-      slug:"test"
+      name: "Brand8",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand9",
-      image:"image",
-      slug:"test"
+      name: "Brand9",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand10",
-      image:"image",
-      slug:"test"
+      name: "Brand10",
+      image: "image",
+      slug: "test",
     },
     {
-      name:"Brand11",
-      image:"image",
-      slug:"test"
+      name: "Brand11",
+      image: "image",
+      slug: "test",
     },
-  ]
+  ];
 
-  const blogData=[
-    {tag:"Buying Advice",
-    title:"The Car Enthusiast: Exploring the World of Cars and Driving.",
-    author:"Mr. Morris Mannu",
-    date:"03 April, 2023"
+  const blogData = [
+    {
+      tag: "Buying Advice",
+      title: "The Car Enthusiast: Exploring the World of Cars and Driving.",
+      author: "Mr. Morris Mannu",
+      date: "03 April, 2023",
     },
-    {tag:"Car Advice",
-    title:"The Best Car Brands for Performance and Reliability.",
-    author:"Mr. sahin",
-    date:"03 May, 2023"
+    {
+      tag: "Car Advice",
+      title: "The Best Car Brands for Performance and Reliability.",
+      author: "Mr. sahin",
+      date: "03 May, 2023",
     },
-    {tag:"Driving Advice",
-    title:"The Environmental Impact of Cars and How to Minimize It.",
-    author:"Mr. sahin",
-    date:"03 Aug, 2023"
-    }
-]
+    {
+      tag: "Driving Advice",
+      title: "The Environmental Impact of Cars and How to Minimize It.",
+      author: "Mr. sahin",
+      date: "03 Aug, 2023",
+    },
+  ];
 
   return (
     <>
       <Modals />
       <Topbar />
       <Header />
-      <Banner />
-      <QuickLinkArea />
+      <Banner homeData={homeData} />
+      {/* <QuickLinkArea /> */}
       <Ad728x90 dataAdSlot="5962627056" />
-      <BrandCategory />
-      <MostPopularNewCars subTitle={"Most Popular"} heading={"Most Popular New Cars"} carDetails={carDetails}/>
+
+      <ProductCard
+        subTitle={"Most Popular"}
+        heading={"Most Popular New Cars"}
+        carDetails={carDetails}
+      />
+      {/* <MostPopularNewCars
+        subTitle={"Most Popular"}
+        heading={"Most Popular New Cars"}
+        carDetails={carDetails}
+      /> */}
+
       <Ad728x90 dataAdSlot="5962627056" />
-      <FeaturedNewCars subTitle={"Newly Featured"}  heading={"Featured New Cars"} carDetails={carDetails} />
+
+      <FeaturedNewCars
+        subTitle={"Newly Featured"}
+        heading={"Featured New Cars"}
+        carDetails={carDetails}
+      />
       {/* <NewPopularBrands brandsData={brands}  /> */}
       {/* <UpcomingCars /> */}
       {/* <RecomandationCar /> */}
@@ -173,14 +195,76 @@ export default function Home() {
       {/* <WhyChoose /> */}
       {/* <ShopCard /> */}
       {/* <Testimonial /> */}
-   
 
-      <Blog heading={"Trending Car News"} btnTitle={"View All Latest News"} blogData={blogData}/>
-      <Blog heading={"New Car Reviews"} btnTitle={"View All Reviews"} blogData={blogData}/>
+      <BrandCategory />
+
+      <Blog
+        heading={"Trending Car News"}
+        btnTitle={"View All Latest News"}
+        blogData={blogData}
+      />
+      <Blog
+        heading={"New Car Reviews"}
+        btnTitle={"View All Reviews"}
+        blogData={blogData}
+      />
       <Ad728x90 dataAdSlot="5962627056" />
-      
+
       <Footer1 />
       <GoToTopButton />
     </>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const client = new ApolloClient({
+      uri: 'http://localhost:1337/graphql',
+      cache: new InMemoryCache(),
+    });
+
+    const data = await client.query({
+      query: gql`
+        query CarSections {
+          carSections(filters: { name: { eq: "Featured Cars" } }) {
+            data {
+              id
+              attributes {
+                name
+                car_models(filters: { year: { eq: 2023 }}) {
+                  data {
+                    id
+                    attributes {
+                      name
+                      year
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `
+    });
+
+    console.log("GraphQL Data:", data);
+
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}pages/1?populate[0]=Sections,Sections.image`);
+
+    console.log("Axios Response:", response.data);
+
+    return {
+      props: {
+        homeData: response?.data?.data?.attributes?.Sections[0]
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error.message);
+    return {
+      props: {
+        error: true,
+        errorMessage: error.message,
+      },
+    };
+  }
 }

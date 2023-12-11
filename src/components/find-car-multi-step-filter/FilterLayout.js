@@ -31,9 +31,6 @@ export default function FilterLayout() {
   const [currentStep, setCurrentStep] = useState(0);
   const [specific, setSpecific] = useState(false);
 
-  
-  
-
   const filterOptions = {
     haveMusic: filterData.preferences.includes("premium-sound") ? 1 : 0,
     isLuxury: filterData.preferences.includes("luxury") ? 1 : 0,
@@ -52,11 +49,7 @@ export default function FilterLayout() {
     isSevenToNine: filterData.seating.includes("7-9") ? 1 : 0,
   };
 
-  
-
   useEffect(() => {
-
-    
     const fetchData = () => {
       let query = `${filterOptions.haveMusic === 1 ? "haveMusic=1" : ""}`;
       query += filterOptions.isLuxury === 1 ? "&isLuxury=1" : "";
@@ -72,34 +65,32 @@ export default function FilterLayout() {
       query += filterOptions.isFourToFive === 1 ? "&isFourToFive=1" : "";
       query += filterOptions.isFiveToSeven === 1 ? "&isFiveToSeven=1" : "";
       query += filterOptions.isSevenToNine === 1 ? "&isSevenToNine=1" : "";
-      
 
-      
-      axios
-        .get(
-          process.env.NEXT_PUBLIC_API_URL + "filter/get-min-max" + "?" + query
-        )
-        .then((response) => {
-          setFilterData((prevState) => ({
-            ...prevState,
-            budget: [
-              response.data.min !== null ? response?.data?.min : null,
-              response.data.max !== null ? response?.data?.max : null,
-            ],
-          }));
+      // axios
+      //   .get(
+      //     process.env.NEXT_PUBLIC_API_URL + "filter/get-min-max" + "?" + query
+      //   )
+      //   .then((response) => {
+      //     setFilterData((prevState) => ({
+      //       ...prevState,
+      //       budget: [
+      //         response.data.min !== null ? response?.data?.min : null,
+      //         response.data.max !== null ? response?.data?.max : null,
+      //       ],
+      //     }));
 
-          // setMinMaxData(response.data);
-          // setIsLoading(false);
-        })
-        .catch((error) => {
-          console.error("Error", error);
-          // setIsLoading(false);
-          // setError(error);
-        });
+      //     // setMinMaxData(response.data);
+      //     // setIsLoading(false);
+      //   })
+      //   .catch((error) => {
+      //     console.error("Error", error);
+      //     // setIsLoading(false);
+      //     // setError(error);
+      //   });
     };
 
     fetchData();
-  }, [filterData.preferences,filterData.seating]);
+  }, [filterData.preferences, filterData.seating]);
 
   const steps = [
     {
@@ -120,35 +111,39 @@ export default function FilterLayout() {
         <StepTwo filterData={filterData} setFilterData={setFilterData} />
       ),
     },
-    
   ];
-
 
   const handleNextStep = () => {
     if (filterData.preferences.length === 0) {
       setError("Select atleast one preference");
     } else if (
-      filterData.seating.length <= 0 && filterData.preferences.length > 0 && filterData?.budget[0] === null &&
+      filterData.seating.length <= 0 &&
+      filterData.preferences.length > 0 &&
+      filterData?.budget[0] === null &&
       filterData?.budget[1] === null
     ) {
       setError("no cars available for the selected preferences");
-    }else if(filterData.seating.length > 0 && filterData.preferences.length > 0 && filterData?.budget[0] === null &&
-      filterData?.budget[1] === null){
-        setError("no cars available for the selected seats");
-    }
-    
-    else if (filterData.seating.length === 0 && filterData.preferences.length > 0 && currentStep === 1) {
+    } else if (
+      filterData.seating.length > 0 &&
+      filterData.preferences.length > 0 &&
+      filterData?.budget[0] === null &&
+      filterData?.budget[1] === null
+    ) {
+      setError("no cars available for the selected seats");
+    } else if (
+      filterData.seating.length === 0 &&
+      filterData.preferences.length > 0 &&
+      currentStep === 1
+    ) {
       setError("Select atleast one seating option");
-    }else {
+    } else {
       setCurrentStep(currentStep + 1);
     }
-    
-    
   };
 
   const handlePrevStep = () => {
     setCurrentStep(currentStep - 1);
-    if(currentStep === 1){
+    if (currentStep === 1) {
       setFilterData((prevState) => ({
         ...prevState,
         seating: [],
@@ -159,36 +154,36 @@ export default function FilterLayout() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // if ( filterData.seating.length > 0) {
-      let query = `${filterOptions.haveMusic == 1 ? "haveMusic=1" : ""}`;
-      query += filterOptions.isLuxury ? "&isLuxury=1" : "";
-      query += filterOptions.isPremiumLuxury ? "&isPremiumLuxury=1" : "";
-      query += filterOptions.haveTechnology ? "&haveTechnology=1" : "";
-      query += filterOptions.havePerformance ? "&havePerformance=1" : "";
-      query += filterOptions.isSpacious ? "&isSpacious=1" : "";
-      query += filterOptions.isElectric ? "&isElectric=1" : "";
-      query += filterOptions.isFuelEfficient ? "&isFuelEfficient=1" : "";
-      query += filterOptions.isOffRoad ? "&isOffRoad=1" : "";
-      query += filterOptions.isTwoSeat === 1 ? "&isTwoSeat=1" : "";
-      query += filterOptions.isTwoPlusTwo === 1 ? "&isTwoPlusTwo=1" : "";
-      query += filterOptions.isFourToFive === 1 ? "&isFourToFive=1" : "";
-      query += filterOptions.isFiveToSeven === 1 ? "&isFiveToSeven=1" : "";
-      query += filterOptions.isSevenToNine === 1 ? "&isSevenToNine=1" : "";
+    let query = `${filterOptions.haveMusic == 1 ? "haveMusic=1" : ""}`;
+    query += filterOptions.isLuxury ? "&isLuxury=1" : "";
+    query += filterOptions.isPremiumLuxury ? "&isPremiumLuxury=1" : "";
+    query += filterOptions.haveTechnology ? "&haveTechnology=1" : "";
+    query += filterOptions.havePerformance ? "&havePerformance=1" : "";
+    query += filterOptions.isSpacious ? "&isSpacious=1" : "";
+    query += filterOptions.isElectric ? "&isElectric=1" : "";
+    query += filterOptions.isFuelEfficient ? "&isFuelEfficient=1" : "";
+    query += filterOptions.isOffRoad ? "&isOffRoad=1" : "";
+    query += filterOptions.isTwoSeat === 1 ? "&isTwoSeat=1" : "";
+    query += filterOptions.isTwoPlusTwo === 1 ? "&isTwoPlusTwo=1" : "";
+    query += filterOptions.isFourToFive === 1 ? "&isFourToFive=1" : "";
+    query += filterOptions.isFiveToSeven === 1 ? "&isFiveToSeven=1" : "";
+    query += filterOptions.isSevenToNine === 1 ? "&isSevenToNine=1" : "";
 
-      const url =
-        `/find-your-car?` +
-        query +
-        `&min=${filterData?.budget[0]}` +
-        `&max=${filterData?.budget[1]}`;
+    const url =
+      `/find-your-car?` +
+      query +
+      `&min=${filterData?.budget[0]}` +
+      `&max=${filterData?.budget[1]}`;
 
-      router.push(url);
+    router.push(url);
     // } else {
-      // setError("Select atleast one seating");
-      // if (
-      //   filterData.preferences.length === 0 &&
-      //   filterData.seating.length === 0
-      // ) {
-        // toast.error("Select atleast one seating");
-      // }
+    // setError("Select atleast one seating");
+    // if (
+    //   filterData.preferences.length === 0 &&
+    //   filterData.seating.length === 0
+    // ) {
+    // toast.error("Select atleast one seating");
+    // }
     // }
   };
 
@@ -202,7 +197,7 @@ export default function FilterLayout() {
         <>
           <div className="search_filter_box text-center">
             <div className="find_car_head ">
-              <h1>New Car Buyer's Guide</h1>
+              <h3 className="text-white">New Car Buyer's Guide</h3>
             </div>
 
             <div className="inner">

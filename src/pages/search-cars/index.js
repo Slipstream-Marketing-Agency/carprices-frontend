@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Link from "next/link";
 import MainLayout from '@/src/layout/MainLayout';
-import Testimonial from '@/src/components/Home5/Testimonial/Testimonial';
 import CarLeftSidebar from '@/src/utils/CarLeftSidebar';
 import SelectComponent from '@/src/utils/SelectComponent';
 import Ad728x90 from '@/src/components/ads/Ad728x90';
@@ -835,7 +834,6 @@ function CarListingLeftSidebar() {
                 </div>
             </div>
         </div>
-        <Testimonial/>
     </MainLayout>
   )
 }

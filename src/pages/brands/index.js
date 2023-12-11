@@ -6,7 +6,6 @@ import Link from 'next/link'
 import MainLayout from '@/src/layout/MainLayout'
 import ProductSearch from '@/src/components/common/ProductSearch'
 import ProductCategory from '@/src/utils/ProductCategory'
-import Testimonial from '@/src/components/Home5/Testimonial/Testimonial'
 import Ad728x90 from '@/src/components/ads/Ad728x90'
 function BrandCategoryPage() {
   return (
@@ -65,7 +64,6 @@ function BrandCategoryPage() {
             </div>
         </div>
 
-        <Testimonial/>
     </MainLayout>
   )
 }

@@ -10,7 +10,6 @@ import Link from "next/link";
 
 import MainLayout from "@/src/layout/MainLayout";
 import SelectComponent from "@/src/utils/SelectComponent";
-import Testimonial from "@/src/components/Home5/Testimonial/Testimonial";
 import Ad728x90 from "@/src/components/ads/Ad728x90";
 import Image from "next/image";
 function ComparePage() {
@@ -962,7 +961,6 @@ function ComparePage() {
                 </div>
             </div>
         </div>
-        <Testimonial/>
     </MainLayout>
   )
 }

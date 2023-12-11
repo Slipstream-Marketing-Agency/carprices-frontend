@@ -186,7 +186,6 @@ h5,
 h6 {
   font-family: var(--font-gilroy);
   font-weight: 600;
-  line-height: 1.4;
   color: var(--title-color);
 }
 
@@ -10116,7 +10115,6 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 
 .banner-section1 {
   /* background-image: url(../img/home1/bannar1-bg.png), linear-gradient(#FAFAFA, #FAFAFA); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(../img/carbackgroundImageCopy.jpg);
     
 
   /* background: rgb(255,255,255); */
@@ -10160,7 +10158,6 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-top: 40px;
   max-width: 705px;
   width: 100%;
-  
   position:relative; 
   /* for transparent car */
 }
@@ -10178,17 +10175,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 .banner-section1 .banner-content .sub-title svg {
   fill: var(--primary-color1);
 }
-.banner-section1 .banner-content h1 {
-  font-family: var(--font-gilroy);
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 1.05;
-   /* color: var(--title-color); */
-  margin-bottom: 20px;
 
-    color: var(--white-color);
-    text-shadow: 0 0 10px black;
-}
 .handIcon{
   color:var(--white-color);
   width:20px;
@@ -10920,7 +10907,6 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   margin-bottom: 7px;
 }
 .product-card .new {
-  font-family: var(--font-open-sans);
   font-weight: 600;
   font-size: 10px;
   line-height: 14px;
@@ -11353,8 +11339,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   background: #FAF8FB;
 }
 .product-card:hover {
-  /* border-color: var(--primary-color1); */
-  box-shadow:2px 2px 3px black;
+  border-color: var(--primary-color2);
 }
 .product-card:hover .product-img .number-of-img {
   opacity: 1;
@@ -24649,18 +24634,11 @@ font-family:var(--font-gilroy);
 .find_car_head {
   background: var(--primary-color1);
   color: var(--white-color);
-  margin-bottom: -2px;
   padding: 10px 0px;
-  border-radius: 10px 10px 40px 40px;
-  box-shadow: 1px 4px 6px black;
   margin-bottom:3px;
 }
 
-.find_car_head h1 {
-  font-size: 22px !important;
-  color:var(--white-color);
-  font-weight: 600 !important;
-}
+
 
 .search_filter_box {
   border-radius: 10px;
@@ -24687,9 +24665,6 @@ font-family:var(--font-gilroy);
   font-size: 25px;
 }
 
-.search_filter_box h3 {
-  font-size: 16px !important;
-}
 
 .search_filter_box_items {
   margin: 3px 0px;
@@ -25287,10 +25262,9 @@ font-family:var(--font-gilroy);
 /* filter text style  begins*/
 .filterStepTxt{
   font-family: var(--font-gilroy);
-  background:var(--primary-color1);
   padding:3px;
   border-radius:1px;
-  color:white;
+  color:black;
 }
 /* fiter text style ends */
 
