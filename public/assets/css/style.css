@@ -11339,7 +11339,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   background: #FAF8FB;
 }
 .product-card:hover {
-  border-color: var(--primary-color2);
+  border-color: var(--light);
 }
 .product-card:hover .product-img .number-of-img {
   opacity: 1;

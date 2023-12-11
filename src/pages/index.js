@@ -19,12 +19,16 @@ import Blog from "../components/Home1/Blog/index";
 import Ad728x90 from "../components/ads/Ad728x90";
 import PopularBrands from "../components/PopularBrands";
 import GoToTopButton from "../components/goToTop";
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import axios from "axios";
 import ProductCard from "../components/Home1/ProductCard";
 
+export default function Home({ homeData, error, errorMessage,popularcars }) {
 
-export default function Home({ homeData }) {
+  console.log(popularcars,"datadatadatadata");
+  if (error) {
+    return <div>Error: {errorMessage}</div>;
+  }
   const carDetails = [
     {
       carName: "Example Car 1",
@@ -171,7 +175,7 @@ export default function Home({ homeData }) {
       <ProductCard
         subTitle={"Most Popular"}
         heading={"Most Popular New Cars"}
-        carDetails={carDetails}
+        carDetails={popularcars}
       />
       {/* <MostPopularNewCars
         subTitle={"Most Popular"}
@@ -216,14 +220,16 @@ export default function Home({ homeData }) {
   );
 }
 
-export async function getServerSideProps() {
-  try {
-    const client = new ApolloClient({
-      uri: 'http://localhost:1337/graphql',
-      cache: new InMemoryCache(),
-    });
 
-    const data = await client.query({
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT,
+    cache: new InMemoryCache(),
+  });
+
+  try {
+    const { data } = await client.query({
       query: gql`
         query CarSections {
           carSections(filters: { name: { eq: "Featured Cars" } }) {
@@ -231,7 +237,7 @@ export async function getServerSideProps() {
               id
               attributes {
                 name
-                car_models(filters: { year: { eq: 2023 }}) {
+                car_models(filters: { year: { eq: 2023 } }) {
                   data {
                     id
                     attributes {
@@ -244,22 +250,23 @@ export async function getServerSideProps() {
             }
           }
         }
-      `
+      `,
     });
 
-    console.log("GraphQL Data:", data);
+    const axiosResponse = await axios.get(
+      `${process.env.NEXT_PUBLIC_API_URL}pages/1?populate[0]=Sections,Sections.image`
+    );
 
-    const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}pages/1?populate[0]=Sections,Sections.image`);
-
-    console.log("Axios Response:", response.data);
+    console.log(data,"datadatadata");
 
     return {
       props: {
-        homeData: response?.data?.data?.attributes?.Sections[0]
+        homeData: axiosResponse?.data?.data?.attributes?.Sections[0],
+        popularcars: data?.carSections?.data[0]?.attributes?.car_models?.data
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error.message);
+    console.error("Server-side Data Fetching Error:", error.message);
     return {
       props: {
         error: true,

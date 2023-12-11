@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 
 function ProductCard({ subTitle, heading, carDetails }) {
+
+    console.log(carDetails,"carDetails");
   return (
     <div className="recent-product-section mb-50">
       <div className="container">
@@ -113,7 +115,7 @@ function ProductCard({ subTitle, heading, carDetails }) {
                         <div className="product-content">
                           <h5>
                             <Link legacyBehavior href="/car-deatils">
-                              <a>{car.carName}</a>
+                              <a>{car?.attributes?.name}</a>
                             </Link>
                           </h5>
                           <div className="price-location">
