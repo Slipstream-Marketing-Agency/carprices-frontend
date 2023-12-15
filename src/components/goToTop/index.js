@@ -28,7 +28,7 @@ const GoToTopButton = () => {
       onClick={scrollToTop}
       title="Go to Top"
     >
-    <i class="bi bi-arrow-up-circle"></i>
+    <i className="bi bi-arrow-up-circle"></i>
     </button>
   );
 };

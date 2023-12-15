@@ -284,20 +284,20 @@ function index({ heading, carDetails }) {
               <div className="slider-btn prev-3 d-md-flex d-none pb-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
               </div>
-              <div class="view-btn-area ">
+              <div className="view-btn-area ">
                  
               <p>There are Trending Car Available</p>
-<button class="button-89" role="button">View More</button>
+<button className="button-89" role="button">View More</button>
 {/* custom button begins */}
-{/* <div class="buttons">
-  <button class="blob-btn">
+{/* <div className="buttons">
+  <button className="blob-btn">
     View More
-    <span class="blob-btn__inner">
-      <span class="blob-btn__blobs">
-        <span class="blob-btn__blob"></span>
-        <span class="blob-btn__blob"></span>
-        <span class="blob-btn__blob"></span>
-        <span class="blob-btn__blob"></span>
+    <span className="blob-btn__inner">
+      <span className="blob-btn__blobs">
+        <span className="blob-btn__blob"></span>
+        <span className="blob-btn__blob"></span>
+        <span className="blob-btn__blob"></span>
+        <span className="blob-btn__blob"></span>
       </span>
     </span>
   </button>

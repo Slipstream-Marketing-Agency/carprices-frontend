@@ -1089,17 +1089,17 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding: 15px 11%;
+  padding: 10px 11%;
   border-bottom: 1px solid #eee;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   .top-bar {
-    padding: 15px 3%;
+    padding: 10px 3%;
   }
 }
 @media (max-width: 1399px) {
   .top-bar {
-    padding: 15px 3%;
+    padding: 10px 3%;
   }
 }
 @media (max-width: 991px) {
@@ -1141,7 +1141,7 @@ p {
   border: 1px solid #EEEEEE;
   border-radius: 5px 0px 0px 5px;
   width: 100%;
-  height: 52px;
+  height: 35px;
   padding: 10px 30px;
   font-family: var(--font-open-sans);
   font-weight: 400;
@@ -1154,7 +1154,7 @@ p {
 }
 .top-bar .search-area form .form-inner button {
   width: 68px;
-  height: 52px;
+  height: 35px;
   border-radius: 0px 5px 5px 0px;
   background-color: var(--primary-color1);
   transition: 0.5s;
@@ -2671,7 +2671,7 @@ header.style-1 .main-menu ul > li.position-inherit > a::after {
   font-family: "bootstrap-icons";
   font-weight: 500;
   position: absolute;
-  top: 15px;
+  top: 5px;
   right: 2px;
   font-size: 14px;
   color: var(--text-color);
@@ -2704,7 +2704,7 @@ header.style-1 .main-menu ul > li a {
   color: var(--title-color);
   display: block;
   text-transform: capitalize;
-  padding: 15px 20px;
+  padding: 5px 20px;
   position: relative;
   font-family: var(--font-gilroy);
   text-transform: uppercase;
@@ -3070,7 +3070,7 @@ header.style-1 .main-menu ul > li.menu-item-has-children::after {
   font-family: "bootstrap-icons";
   font-weight: 500;
   position: absolute;
-  top: 15px;
+  top: 5px;
   right: 10px;
   font-size: 14px;
   color: var(--text-color);
@@ -10742,14 +10742,14 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  /* background-color: rgba(246, 243, 249, 0.6); */
+  background-color: rgba(246, 243, 249, 0.6);
   border-radius: 10px;
   padding: 30px 20px;
   z-index: 1;
   transition: all ease 0.35s;
 }
 .brand-category-area .single-category1 .brand-icon {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 .brand-category-area .single-category1::after {
   content: "";
@@ -11004,6 +11004,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .product-card .product-img img {
   border-radius: 5px;
+  height: 130px;
 }
 @media (max-width: 767px) {
   .product-card .product-img img {
@@ -11011,11 +11012,11 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   }
 }
 .product-card .product-content {
-  padding: 15px;
+  padding: 5px;
 }
 @media (max-width: 1499px) {
   .product-card .product-content {
-    padding: 15px 10px;
+    padding: 5px 10px;
   }
 }
 .product-card .product-content .countdown-timer {
@@ -11052,7 +11053,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
 }
 .product-card .product-content h5 {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   line-height: 1;
 }
 .product-card .product-content h5 a {
@@ -11122,7 +11123,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
   gap: 7px;
   position: relative;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
   flex-wrap: wrap;
 }
 @media (max-width: 1699px) {
@@ -11136,7 +11137,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
     flex-wrap: wrap;
   }
 }
-.product-card .product-content .features::after {
+/* .product-card .product-content .features::after {
   content: "";
   background-color: #eee;
   position: absolute;
@@ -11145,7 +11146,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   width: 80%;
   bottom: 0;
   transform: translateX(-50%);
-}
+} */
 .product-card .product-content .features li {
   display: flex;
   align-items: center;
@@ -11174,7 +11175,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 .product-card .product-content .content-btm .view-btn2 {
   font-family: var(--font-gilroy);
@@ -11186,6 +11187,9 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   align-items: center;
   gap: 7px;
   transition: 0.35s;
+  /* border: 1px solid #EEEEEE;
+    padding: 5px 10px;
+    border-radius: 10px; */
 }
 .product-card .product-content .content-btm .view-btn2 svg path {
   fill: var(--primary-color1);

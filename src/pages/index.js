@@ -23,7 +23,15 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import axios from "axios";
 import ProductCard from "../components/Home1/ProductCard";
 
-export default function Home({ homeData, error, errorMessage, popularcars }) {
+export default function Home({
+  homeData,
+  error,
+  errorMessage,
+  popularcars,
+  featuredcars,
+  electriccars,
+  popularBrands
+}) {
   console.log(popularcars, "datadatadatadata");
   if (error) {
     return <div>Error: {errorMessage}</div>;
@@ -170,7 +178,6 @@ export default function Home({ homeData, error, errorMessage, popularcars }) {
       <Banner homeData={homeData} />
       {/* <QuickLinkArea /> */}
       <Ad728x90 dataAdSlot="5962627056" />
-
       <ProductCard
         subTitle={"Most Popular"}
         heading={"Most Popular New Cars"}
@@ -181,14 +188,18 @@ export default function Home({ homeData, error, errorMessage, popularcars }) {
         heading={"Most Popular New Cars"}
         carDetails={carDetails}
       /> */}
-
       <Ad728x90 dataAdSlot="5962627056" />
+      <ProductCard heading={"Featured New Cars"} carDetails={featuredcars} />
 
-      <FeaturedNewCars
+      <ProductCard
+        heading={"Popular New Electric Cars"}
+        carDetails={electriccars}
+      />
+      {/* <FeaturedNewCars
         subTitle={"Newly Featured"}
         heading={"Featured New Cars"}
         carDetails={carDetails}
-      />
+      /> */}
       {/* <NewPopularBrands brandsData={brands}  /> */}
       {/* <UpcomingCars /> */}
       {/* <RecomandationCar /> */}
@@ -198,9 +209,7 @@ export default function Home({ homeData, error, errorMessage, popularcars }) {
       {/* <WhyChoose /> */}
       {/* <ShopCard /> */}
       {/* <Testimonial /> */}
-
-      <BrandCategory />
-
+      <BrandCategory brandDetails={popularBrands}/>
       <Blog
         heading={"Trending Car News"}
         btnTitle={"View All Latest News"}
@@ -212,7 +221,6 @@ export default function Home({ homeData, error, errorMessage, popularcars }) {
         blogData={blogData}
       />
       <Ad728x90 dataAdSlot="5962627056" />
-
       <Footer1 />
       <GoToTopButton />
     </>
@@ -226,10 +234,10 @@ export async function getServerSideProps() {
   });
 
   try {
-    const { data } = await client.query({
+    const popularcarsData = await client.query({
       query: gql`
         query CarSections {
-          carSections(filters: { name: { eq: "Featured Cars" } }) {
+          carSections(filters: { name: { eq: "Popular Cars" } }) {
             data {
               id
               attributes {
@@ -240,15 +248,22 @@ export async function getServerSideProps() {
                     attributes {
                       name
                       year
-                      metaTitle
                       slug
-                      description
                       car_brands {
                         data {
                           id
                           attributes {
                             name
                             slug
+                            brandLogo {
+                              data {
+                                id
+                                attributes {
+                                  name
+                                  url
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -264,7 +279,7 @@ export async function getServerSideProps() {
                           }
                         }
                       }
-                      car_trims {
+                      car_trims(filters: { year: { eq: 2023 } }) {
                         data {
                           id
                           attributes {
@@ -278,9 +293,228 @@ export async function getServerSideProps() {
                                 }
                               }
                             }
+                            price
+                            highTrim
+                            year
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `,
+    });
+
+    const featuredcarsData = await client.query({
+      query: gql`
+        query CarSections {
+          carSections(filters: { name: { eq: "Featured Cars" } }) {
+            data {
+              id
+              attributes {
+                name
+                car_models(filters: { year: { eq: 2023 } }) {
+                  data {
+                    id
+                    attributes {
+                      name
+                      year
+                      slug
+                      car_brands {
+                        data {
+                          id
+                          attributes {
+                            name
+                            slug
+                            brandLogo {
+                              data {
+                                id
+                                attributes {
+                                  name
+                                  url
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      year
+                      isFeatured
+                      isElectric
+                      featuredImage {
+                        data {
+                          id
+                          attributes {
+                            name
+                            url
+                          }
+                        }
+                      }
+                      car_trims(filters: { year: { eq: 2023 } }) {
+                        data {
+                          id
+                          attributes {
+                            name
+                            featuredImage {
+                              data {
+                                id
+                                attributes {
+                                  name
+                                  url
+                                }
+                              }
+                            }
+                            price
+                            highTrim
+                            year
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `,
+    });
+
+    const electriccarsData = await client.query({
+      query: gql`
+        query CarSections {
+          carSections(filters: { name: { eq: "Popular Electric Cars" } }) {
+            data {
+              id
+              attributes {
+                name
+                car_models(filters: { year: { eq: 2023 } }) {
+                  data {
+                    id
+                    attributes {
+                      name
+                      year
+                      slug
+                      car_brands {
+                        data {
+                          id
+                          attributes {
+                            name
+                            slug
+                            brandLogo {
+                              data {
+                                id
+                                attributes {
+                                  name
+                                  url
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      year
+                      isFeatured
+                      isElectric
+                      featuredImage {
+                        data {
+                          id
+                          attributes {
+                            name
+                            url
+                          }
+                        }
+                      }
+                      car_trims(filters: { year: { eq: 2023 } }) {
+                        data {
+                          id
+                          attributes {
+                            name
+                            featuredImage {
+                              data {
+                                id
+                                attributes {
+                                  name
+                                  url
+                                }
+                              }
+                            }
+                            price
+                            highTrim
+                            year
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `,
+    });
+
+    const popularBrandsData = await client.query({
+      query: gql`
+        query brandSections {
+          brandSections(filters: { name: { eq: "Popular Brands" } }) {
+            data {
+              id
+              attributes {
+                name
+                car_brands(pagination: { limit: 12 }) {
+                  data {
+                    id
+                    attributes {
+                      name
+                      brandLogo {
+                        data {
+                          id
+                          attributes {
+                            name
+                            url
+                          }
+                        }
+                      }
+                      slug
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `,
+    });
+
+    const newsData = await client.query({
+      query: gql`
+        query brandSections {
+          brandSections(filters: { name: { eq: "Popular Brands" } }) {
+            data {
+              id
+              attributes {
+                name
+                car_brands(pagination: { limit: 12 }) {
+                  data {
+                    id
+                    attributes {
+                      name
+                      brandLogo {
+                        data {
+                          id
+                          attributes {
+                            name
+                            url
+                          }
+                        }
+                      }
+                      slug
                     }
                   }
                 }
@@ -295,12 +529,25 @@ export async function getServerSideProps() {
       `${process.env.NEXT_PUBLIC_API_URL}pages/1?populate[0]=Sections,Sections.image`
     );
 
-    console.log(data, "datadatadata");
+    console.log(popularcarsData, "popularcarsData");
 
     return {
       props: {
         homeData: axiosResponse?.data?.data?.attributes?.Sections[0],
-        popularcars: data?.carSections?.data[0]?.attributes?.car_models?.data,
+        popularcars:
+          popularcarsData?.data?.carSections?.data[0]?.attributes?.car_models
+            ?.data,
+        featuredcars:
+          featuredcarsData?.data?.carSections?.data[0]?.attributes?.car_models
+            ?.data,
+
+        electriccars:
+          electriccarsData?.data?.carSections?.data[0]?.attributes?.car_models
+            ?.data,
+
+        popularBrands:
+          popularBrandsData?.data?.brandSections?.data[0]?.attributes?.car_brands
+            ?.data,
       },
     };
   } catch (error) {

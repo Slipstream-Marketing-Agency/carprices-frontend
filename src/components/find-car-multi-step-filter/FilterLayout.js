@@ -210,7 +210,7 @@ export default function FilterLayout() {
                       className="close_button pointer"
                       onClick={() => setError(false)}
                     >
-                      <i class="bi bi-x-circle-fill"></i>
+                      <i className="bi bi-x-circle-fill"></i>
                     </div>
                   </small>
                 </>

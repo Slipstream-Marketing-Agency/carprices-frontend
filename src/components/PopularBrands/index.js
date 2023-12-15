@@ -18,7 +18,7 @@ export default function PopularBrands(props) {
             </div>
             <div className="view-btn-area mt-2">
   
-            <Link class="primary-btn1 text-white d-flex align-items-center gap-0 "  href="/brands"><span>View All Brands</span></Link>           
+            <Link className="primary-btn1 text-white d-flex align-items-center gap-0 "  href="/brands"><span>View All Brands</span></Link>           
          
             </div>
           </div>

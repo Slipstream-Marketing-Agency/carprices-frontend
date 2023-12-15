@@ -93,17 +93,17 @@ function index({heading,btnTitle,blogData}) {
                 </div>
             </div> */}
             </div>
-            <div class="view-btn-area mt-5">
+            <div className="view-btn-area mt-5">
  {/* custom button begins */}
-<div class="buttons">
-  <button class="blob-btn">
+<div className="buttons">
+  <button className="blob-btn">
     {btnTitle}
-    <span class="blob-btn__inner">
-      <span class="blob-btn__blobs">
-        <span class="blob-btn__blob"></span>
-        <span class="blob-btn__blob"></span>
-        <span class="blob-btn__blob"></span>
-        <span class="blob-btn__blob"></span>
+    <span className="blob-btn__inner">
+      <span className="blob-btn__blobs">
+        <span className="blob-btn__blob"></span>
+        <span className="blob-btn__blob"></span>
+        <span className="blob-btn__blob"></span>
+        <span className="blob-btn__blob"></span>
       </span>
     </span>
   </button>

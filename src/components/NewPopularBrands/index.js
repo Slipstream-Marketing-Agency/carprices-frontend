@@ -116,8 +116,8 @@ function index({ heading, brandsData }) {
                         </div>
                     </div>
                 </div>
-                <div class="view-btn-area ">
-                    <button type="button" class="primary-btn1 text-white d-flex align-items-center gap-0 " ><span className="btn-txt">View All Brands</span>
+                <div className="view-btn-area ">
+                    <button type="button" className="primary-btn1 text-white d-flex align-items-center gap-0 " ><span className="btn-txt">View All Brands</span>
                     </button>
                 </div>
             </div>
